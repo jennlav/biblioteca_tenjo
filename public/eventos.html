@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Eventos | Biblioteca Pública Municipal</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link href="assets/css/styles.css?v=20260930-2" rel="stylesheet">
+
+  <link href="assets/css/eventos.css?v=20260930-2" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- =====================================================
+       NAVEGACIÓN PRINCIPAL
+       Cabecera institucional, menú responsive y accesos entre vistas.
+       ===================================================== -->
+  <header class="header fixed-top">
+
+    <div class="container nav-wrapper">
+
+      <div class="logo">
+
+        <img src="assets/img/logobiblio.png" alt="Biblioteca">
+
+        <div class="logo-text">
+
+          <strong>Biblioteca Municipal Isabel Murillo de Luque</strong>
+
+          <span>Tenjo - Cundinamarca</span>
+
+        </div>
+
+      </div>
+
+      <div
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Abrir menú"
+        role="button"
+        tabindex="0"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+      </div>
+
+            <nav class="nav-menu" id="nav-menu">
+
+        <a href="index.html">Inicio</a>
+
+        <div class="nav-item-dropdown">
+
+          <button
+
+            class="nav-dropdown-toggle"
+
+            type="button"
+
+            aria-expanded="false"
+
+          >
+
+            Servicios
+
+            <span class="nav-caret">▾</span>
+
+          </button>
+
+          <div class="nav-submenu">
+
+            <a href="servicios.html">Servicios Básicos</a>
+
+            <a href="actividades-transversales.html">Actividades Transversales</a>
+
+            <a href="programas.html">Programas Bibliotecarios</a>
+
+            <a href="eventos.html" class="active" aria-current="page">Eventos</a>
+
+            <a href="coworking.html">Solicitud Espacios</a>
+
+            <a href="pqrs.html">PQRSDF</a>
+
+          </div>
+
+        </div>
+
+        <div class="nav-item-dropdown">
+
+          <button
+
+            class="nav-dropdown-toggle"
+
+            type="button"
+
+            aria-expanded="false"
+
+          >
+
+            Biblioteca
+
+            <span class="nav-caret">▾</span>
+
+          </button>
+
+          <div class="nav-submenu">
+
+            <a href="sedes.html">Sedes</a>
+
+            <a href="documentacion.html">Documentación Pública</a>
+            <a href="noticias.html">Noticias</a>
+
+            <a href="equipo.html">Equipo</a>
+
+            <a href="contacto.html">Contacto</a>
+
+          </div>
+
+        </div>
+
+        <a href="material-digital.html">Material Digital</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- =====================================================
+       REDES SOCIALES
+       Accesos persistentes a canales institucionales externos.
+       ===================================================== -->
+
+  <aside class="social-floating" aria-label="Redes sociales de la Biblioteca">
+
+    <a href="https://www.facebook.com/share/1D3AH3pV28/" target="_blank" rel="noopener noreferrer" class="social-floating-link social-facebook" aria-label="Facebook" title="Facebook">
+
+      <i class="bi bi-facebook" aria-hidden="true"></i>
+
+    </a>
+
+    <a href="https://www.instagram.com/biblioteca.tenjo?igsh=MWxzM2tiNmQ5ZW1xNg==" target="_blank" rel="noopener noreferrer" class="social-floating-link social-instagram" aria-label="Instagram" title="Instagram">
+
+      <i class="bi bi-instagram" aria-hidden="true"></i>
+
+    </a>
+
+    <a href="https://www.youtube.com/canaltenjo" target="_blank" rel="noopener noreferrer" class="social-floating-link social-youtube" aria-label="YouTube" title="YouTube">
+
+      <i class="bi bi-youtube" aria-hidden="true"></i>
+
+    </a>
+
+    <a
+      href="https://wa.me/573007274898"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="social-floating-link social-whatsapp"
+      aria-label="WhatsApp"
+      title="WhatsApp"
+    >
+
+      <i class="bi bi-whatsapp" aria-hidden="true"></i>
+
+    </a>
+
+  </aside>
+
+  <main class="eventos-page">
+
+    <!-- =====================================================
+         ENCABEZADO DE EVENTOS
+         Título y descripción sincronizados desde el API.
+         ===================================================== -->
+
+    <section class="eventos-hero">
+
+      <div class="container">
+
+        <div class="eventos-topbar">
+
+          <div class="breadcrumb-custom">
+
+            <a href="index.html">Inicio</a>
+
+            <span>/</span>
+
+            <span class="current">Eventos</span>
+
+          </div>
+
+        </div>
+
+        <div class="eventos-hero-content">
+
+          <div class="eventos-copy">
+
+            <span class="eventos-kicker" id="encabezado-etiqueta"></span>
+            <h1 id="encabezado-titulo">Eventos</h1>
+
+            <p id="encabezado-descripcion">
+
+              En la Biblioteca Pública Municipal de Tenjo, Isabel Murillo de Luque tenemos una agenda llena de experiencias para disfrutar durante todo el año. Descubre nuestros eventos literarios, culturales y artísticos, y encuentra nuevas oportunidades para aprender, compartir y disfrutar en comunidad.
+
+            </p>
+
+            <div class="hero-accent-line"></div>
+
+          </div>
+
+          <div class="eventos-hero-visual">
+
+            <img src="assets/img/activities/tigrilector.png" alt="Tigrillo en eventos">
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===================================================
+
+         BUSCADOR Y CALENDARIO DE EVENTOS
+
+         =================================================== -->
+
+    <section class="eventos-catalogo">
+
+      <div class="container">
+
+        <div class="eventos-filtros" aria-label="Filtros del calendario de eventos">
+
+          <div class="filtro-campo filtro-busqueda">
+
+            <label for="eventoBusqueda">Buscar eventos</label>
+
+            <div class="filtro-input-wrap">
+
+              <i class="bi bi-search" aria-hidden="true"></i>
+
+              <input
+
+                type="search"
+
+                id="eventoBusqueda"
+
+                placeholder="Buscar por nombre o palabra clave"
+
+                autocomplete="off"
+
+              >
+
+            </div>
+
+          </div>
+
+          <div class="filtro-campo">
+
+            <label for="eventoCategoria">Categoría del evento</label>
+
+            <select id="eventoCategoria">
+
+              <option value="">- Cualquiera -</option>
+
+              <option value="Educación y formación">Educación y formación</option>
+
+              <option value="Literatura y lectura">Literatura y lectura</option>
+
+              <option value="Cultura y patrimonio">Cultura y patrimonio</option>
+
+              <option value="Inclusión y derechos">Inclusión y derechos</option>
+
+              <option value="Comunicación e información">Comunicación e información</option>
+
+              <option value="Infancia y juego">Infancia y juego</option>
+
+            </select>
+
+          </div>
+
+          <div class="filtro-campo">
+
+            <label for="eventoFechaDesde">Seleccionar fecha desde</label>
+
+            <input type="date" id="eventoFechaDesde" min="2026-01-01" max="2026-12-31">
+
+          </div>
+
+          <div class="filtro-campo">
+
+            <label for="eventoFechaHasta">Seleccionar fecha hasta</label>
+
+            <input type="date" id="eventoFechaHasta" min="2026-01-01" max="2026-12-31">
+
+          </div>
+
+          <div class="filtro-acciones">
+
+            <button type="button" class="btn-evento-buscar" id="eventoBuscar">
+
+              <i class="bi bi-search" aria-hidden="true"></i>
+
+              Buscar
+
+            </button>
+
+            <button type="button" class="btn-evento-limpiar" id="eventoLimpiar">
+
+              Limpiar
+
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="eventos-resultados-top">
+
+          <div>
+
+            <span class="section-kicker">Calendario 2026</span>
+
+            <h2>Eventos y fechas conmemorativas</h2>
+
+          </div>
+
+          <p class="eventos-contador" id="eventosContador" aria-live="polite"></p>
+
+        </div>
+
+        <div class="eventos-grid" id="eventosGrid"></div>
+
+        <div class="eventos-empty" id="eventosEmpty" hidden>
+
+          <span class="eventos-empty-icon" aria-hidden="true">
+
+            <i class="bi bi-calendar-x"></i>
+
+          </span>
+
+          <h3>No encontramos eventos</h3>
+
+          <p>Prueba modificando el texto, la categoría o el rango de fechas seleccionado.</p>
+
+          <button type="button" class="btn btn-main" id="eventoLimpiarEmpty">
+
+            Ver todos los eventos
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===================================================
+
+         MODAL DETALLE DE EVENTO
+
+         =================================================== -->
+
+    <div
+
+      class="evento-modal"
+
+      id="eventoModal"
+
+      aria-hidden="true"
+
+      role="dialog"
+
+      aria-modal="true"
+
+      aria-labelledby="eventoModalTitulo"
+
+    >
+
+      <div class="evento-modal-overlay" data-evento-close></div>
+
+      <div class="evento-modal-dialog" role="document">
+
+        <button
+
+          type="button"
+
+          class="evento-modal-close"
+
+          data-evento-close
+
+          aria-label="Cerrar detalle del evento"
+
+        >
+
+          <i class="bi bi-x-lg" aria-hidden="true"></i>
+
+        </button>
+
+        <div class="evento-modal-media">
+
+          <img id="eventoModalImagen" src="" alt="">
+
+        </div>
+
+        <div class="evento-modal-content">
+
+          <span class="evento-modal-category" id="eventoModalCategoria"></span>
+
+          <span class="evento-modal-date" id="eventoModalFecha"></span>
+
+          <h2 id="eventoModalTitulo"></h2>
+
+          <p id="eventoModalDescripcion"></p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- =====================================================
+         LLAMADO A LA ACCIÓN
+         Mensaje complementario de la agenda bibliotecaria.
+         ===================================================== -->
+
+    <section class="eventos-cta">
+
+      <div class="container">
+
+        <div class="eventos-cta-box">
+
+          <div class="cta-visual">
+
+            <div class="cta-books">📖 ☕</div>
+
+          </div>
+
+          <div class="cta-copy">
+
+            <h2>Una agenda para encontrarnos alrededor de la lectura, la cultura y el conocimiento.</h2>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================================
+         INFORMACIÓN INSTITUCIONAL
+         Horarios de atención y canales de contacto compartidos.
+         ===================================================== -->
+
+    <section class="footer-recursos footer-recursos-interno">
+
+      <div class="container">
+
+        <div class="footer-wrapper footer-wrapper-simple">
+
+          <div class="footer-col-block footer-brand-block">
+
+            <img
+
+              src="assets/img/logobiblio.png"
+
+              alt="Biblioteca"
+
+              class="footer-biblio-logo"
+
+            >
+
+          </div>
+
+          <div class="footer-col-block footer-info-block">
+
+            <h4>Horario de atención</h4>
+
+            <div class="footer-info-list">
+
+              <div class="footer-info-item">
+
+                <span class="footer-info-icon" aria-hidden="true">
+
+                  <i class="bi bi-calendar3"></i>
+
+                </span>
+
+                <div class="footer-info-content">
+
+                  <strong>Lunes a viernes</strong>
+
+                  <p>8:00 am a 1:00 pm</p>
+
+                  <p>2:00 pm a 7:00 pm</p>
+
+                </div>
+
+              </div>
+
+              <div class="footer-info-item">
+
+                <span class="footer-info-icon" aria-hidden="true">
+
+                  <i class="bi bi-calendar3"></i>
+
+                </span>
+
+                <div class="footer-info-content">
+
+                  <strong>Sábado</strong>
+
+                  <p>8:00 am a 1:00 pm</p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="footer-col-block footer-info-block">
+
+            <h4>Contáctanos</h4>
+
+            <div class="footer-info-list">
+
+              <div class="footer-info-item">
+
+                <span class="footer-info-icon" aria-hidden="true">
+
+                  <i class="bi bi-geo-alt-fill"></i>
+
+                </span>
+
+                <div class="footer-info-content">
+
+                  <strong>Dirección</strong>
+
+                  <p>
+
+                    Centro Cultural Nohora Matallana, km 1 vía Tenjo - La Punta,
+
+                    vereda Chitasuga
+
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div class="footer-info-item">
+
+                <span class="footer-info-icon" aria-hidden="true">
+
+                  <i class="bi bi-telephone-fill"></i>
+
+                </span>
+
+                <div class="footer-info-content">
+
+                  <strong>Teléfono</strong>
+
+                  <a href="tel:+573007274898">+57 300 727 48 98</a>
+
+                </div>
+
+              </div>
+
+              <div class="footer-info-item">
+
+                <span class="footer-info-icon" aria-hidden="true">
+
+                  <i class="bi bi-envelope-fill"></i>
+
+                </span>
+
+                <div class="footer-info-content">
+
+                  <strong>Correos electrónicos</strong>
+
+                  <a href="mailto:institutodeculturayturismo@tenjo-cundinamarca.gov.co">
+
+                    institutodeculturayturismo@tenjo-cundinamarca.gov.co
+
+                  </a>
+
+                  <a href="mailto:biblioteca@tenjoculturayturismo.gov.co">
+
+                    biblioteca@tenjoculturayturismo.gov.co
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer-bottom">
+
+    <div class="footer-band">
+
+      <div class="container footer-bottom-content">
+
+        <div class="footer-left">
+
+          <img src="assets/img/logotenjo.png" alt="Escudo institucional" class="footer-shield">
+
+          <p>
+
+            <a href="#">Aviso Legal</a>
+
+            <span>|</span>
+
+            <a href="#">Política de Privacidad</a>
+
+          </p>
+
+        </div>
+
+        <div class="footer-right">
+
+          <img src="assets/img/co.png" alt="Marca Colombia" class="footer-logos">
+
+          <img src="assets/img/culturablanco.png" alt="Logos institucionales" class="footer-logos">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/script.js?v=20260930-2"></script>
+
+  <script src="assets/js/eventos.js?v=20260930-2"></script>
+
+</body>
+
+</html>

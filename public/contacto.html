@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contáctanos | Biblioteca Pública Municipal</title>
+
+  <link
+
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+
+    rel="stylesheet"
+
+  >
+
+  <link
+
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+
+    rel="stylesheet"
+
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Fredoka:wght@400;500;600;700&family=Londrina+Solid:wght@300;400;900&display=swap"
+
+    rel="stylesheet"
+
+  >
+
+  <link href="assets/css/styles.css?v=20260930-8" rel="stylesheet">
+
+  <link href="assets/css/contacto.css?v=20260930-8" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- =====================================================
+
+       HEADER
+
+       ===================================================== -->
+
+  <header class="header fixed-top">
+
+    <div class="container nav-wrapper">
+
+      <div class="logo">
+
+        <img src="assets/img/logobiblio.png" alt="Biblioteca">
+
+        <div class="logo-text">
+
+          <strong>Biblioteca Municipal Isabel Murillo de Luque</strong>
+
+          <span>Tenjo - Cundinamarca</span>
+
+        </div>
+
+      </div>
+
+      <div
+
+        class="menu-toggle"
+
+        id="menu-toggle"
+
+        aria-label="Abrir menú"
+
+        role="button"
+
+        tabindex="0" aria-expanded="false" aria-controls="nav-menu"
+
+      >
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+      </div>
+
+      <nav class="nav-menu" id="nav-menu">
+
+        <a href="index.html">Inicio</a>
+
+        <div class="nav-item-dropdown">
+
+          <button
+
+            class="nav-dropdown-toggle"
+
+            type="button"
+
+            aria-expanded="false"
+
+          >
+
+            Servicios
+
+            <span class="nav-caret">▾</span>
+
+          </button>
+
+          <div class="nav-submenu">
+
+            <a href="servicios.html">Servicios Básicos</a>
+
+            <a href="actividades-transversales.html">Actividades Transversales</a>
+
+            <a href="programas.html">Programas Bibliotecarios</a>
+
+            <a href="eventos.html">Eventos</a>
+
+            <a href="coworking.html">Solicitud Espacios</a>
+
+            <a href="pqrs.html">PQRSDF</a>
+
+          </div>
+
+        </div>
+
+        <div class="nav-item-dropdown">
+
+          <button
+
+            class="nav-dropdown-toggle"
+
+            type="button"
+
+            aria-expanded="false"
+
+          >
+
+            Biblioteca
+
+            <span class="nav-caret">▾</span>
+
+          </button>
+
+          <div class="nav-submenu">
+
+            <a href="sedes.html">Sedes</a>
+
+            <a href="documentacion.html">Documentación Pública</a>
+
+            <a href="noticias.html">Noticias</a>
+            <a href="equipo.html">Equipo</a>
+
+            <a href="contacto.html" class="active" aria-current="page">Contacto</a>
+
+          </div>
+
+        </div>
+
+        <a href="material-digital.html">Material Digital</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- =====================================================
+
+       REDES SOCIALES FLOTANTES
+
+       ===================================================== -->
+
+  <aside
+
+    class="social-floating"
+
+    aria-label="Redes sociales de la Biblioteca"
+
+  >
+
+    <a href="https://www.facebook.com/share/1D3AH3pV28/" target="_blank" rel="noopener noreferrer" class="social-floating-link social-facebook" aria-label="Facebook" title="Facebook">
+
+      <i class="bi bi-facebook" aria-hidden="true"></i>
+
+    </a>
+
+    <a href="https://www.instagram.com/biblioteca.tenjo?igsh=MWxzM2tiNmQ5ZW1xNg==" target="_blank" rel="noopener noreferrer" class="social-floating-link social-instagram" aria-label="Instagram" title="Instagram">
+
+      <i class="bi bi-instagram" aria-hidden="true"></i>
+
+    </a>
+
+    <a href="https://www.youtube.com/canaltenjo" target="_blank" rel="noopener noreferrer" class="social-floating-link social-youtube" aria-label="YouTube" title="YouTube">
+
+      <i class="bi bi-youtube" aria-hidden="true"></i>
+
+    </a>
+
+    <a href="https://wa.me/573007274898" target="_blank" rel="noopener noreferrer" class="social-floating-link social-whatsapp" aria-label="WhatsApp" title="WhatsApp">
+
+      <i class="bi bi-whatsapp" aria-hidden="true"></i>
+
+    </a>
+
+  </aside>
+
+  <main class="contacto-page">
+
+    <!-- ===================================================
+
+         HERO E INFORMACIÓN DE CONTACTO
+
+         =================================================== -->
+
+    <section class="contacto-hero">
+
+      <div class="container">
+
+        <div class="contacto-topbar">
+
+          <div class="breadcrumb-custom">
+
+            <a href="index.html">Inicio</a>
+
+            <span>/</span>
+
+            <span class="current">Contacto</span>
+
+          </div>
+
+          <form class="search-contacto" role="search">
+
+            <input
+
+              type="text"
+
+              placeholder="Buscar en la biblioteca..."
+
+              aria-label="Buscar en la biblioteca"
+
+            >
+
+            <button type="submit" aria-label="Buscar">
+
+              <i class="bi bi-search" aria-hidden="true"></i>
+
+            </button>
+
+          </form>
+
+        </div>
+
+        <div class="contacto-hero-content">
+
+          <div class="contacto-copy">
+
+            <span class="contacto-kicker" id="encabezado-etiqueta">Estamos para ayudarte</span>
+
+            <h1 id="encabezado-titulo">Contáctanos</h1>
+
+            <p id="encabezado-descripcion">
+
+              ¿Tienes alguna pregunta o necesitas más información?
+
+              Envíanos un mensaje y te responderemos lo antes posible.
+
+            </p>
+
+            <div class="contacto-info-layout">
+
+              <div class="contacto-info-card">
+
+                <div class="info-item">
+
+                  <span class="info-icon" aria-hidden="true">
+
+                    <i class="bi bi-geo-alt-fill"></i>
+
+                  </span>
+
+                  <div class="info-content">
+
+                    <h3>Visítanos</h3>
+
+                    <p>
+
+                      Centro Cultural Nhora Matallana Forero, km 1 vía Tenjo - La Punta,
+
+                      vereda Chitasuga.
+
+                    </p>
+
+                  </div>
+
+                </div>
+
+                <div class="info-item">
+
+                  <span class="info-icon" aria-hidden="true">
+
+                    <i class="bi bi-telephone-fill"></i>
+
+                  </span>
+
+                  <div class="info-content">
+
+                    <h3>Llámanos</h3>
+
+                    <a href="tel:+573007274898">
+
+                      +57 300 727 48 98
+
+                    </a>
+
+                  </div>
+
+                </div>
+
+                <div class="info-item">
+
+                  <span class="info-icon" aria-hidden="true">
+
+                    <i class="bi bi-envelope-fill"></i>
+
+                  </span>
+
+                  <div class="info-content">
+
+                    <h3>Escríbenos</h3>
+
+                    <a href="mailto:institutodeculturayturismo@tenjo-cundinamarca.gov.co">
+
+                      institutodeculturayturismo@tenjo-cundinamarca.gov.co
+
+                    </a>
+
+                    <a href="mailto:biblioteca@tenjoculturayturismo.gov.co">
+
+                      biblioteca@tenjoculturayturismo.gov.co
+
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="contacto-mini-visual">
+
+                <img
+
+                  src="assets/img/tigrilibro.png"
+
+                  alt="Mascota de la biblioteca lista para ayudar"
+
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ===================================================
+
+         FORMULARIO
+
+         =================================================== -->
+
+    <section class="contacto-form-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <h2>Envíanos un mensaje</h2>
+
+        </div>
+
+        <div class="contacto-form-grid">
+
+          <div class="contacto-img-box">
+
+            <img
+
+              src="assets/img/contact/contact.jpeg"
+
+              alt="Fachada de la biblioteca"
+
+            >
+
+          </div>
+
+          <div class="contacto-form-box">
+
+            <form id="contactoForm" class="contacto-form" novalidate>
+
+              <div class="form-group">
+
+                <label for="nombre">
+
+                  Nombre completo <span>*</span>
+
+                </label>
+
+                <input
+
+                  type="text"
+
+                  id="nombre"
+
+                  name="nombre"
+
+                  maxlength="150"
+
+                  placeholder="Tu nombre y apellidos"
+
+                  required
+
+                >
+
+                <small class="error-message"></small>
+
+              </div>
+
+              <div class="form-group">
+
+                <label for="correo">
+
+                  Correo electrónico <span>*</span>
+
+                </label>
+
+                <input
+
+                  type="email"
+
+                  id="correo"
+
+                  name="correo"
+
+                  maxlength="180"
+
+                  placeholder="Tu correo electrónico"
+
+                  required
+
+                >
+
+                <small class="error-message"></small>
+
+              </div>
+
+              <div class="form-group">
+
+                <label for="telefono">
+
+                  Teléfono
+
+                  <span class="optional">(opcional)</span>
+
+                </label>
+
+                <input
+
+                  type="text"
+
+                  id="telefono"
+
+                  name="telefono"
+
+                  maxlength="30"
+
+                  placeholder="Tu teléfono (opcional)"
+
+                >
+
+                <small class="error-message"></small>
+
+              </div>
+
+              <div class="form-group">
+
+                <label for="asunto">
+
+                  Asunto <span>*</span>
+
+                </label>
+
+                <input
+
+                  type="text"
+
+                  id="asunto"
+
+                  name="asunto"
+
+                  maxlength="180"
+
+                  placeholder="Asunto de tu mensaje"
+
+                  required
+
+                >
+
+                <small class="error-message"></small>
+
+              </div>
+
+              <div class="form-group">
+
+                <label for="mensaje">
+
+                  Mensaje <span>*</span>
+
+                </label>
+
+                <textarea
+
+                  id="mensaje"
+
+                  name="mensaje"
+
+                  rows="6"
+
+                  maxlength="1000"
+
+                  placeholder="Escribe tu mensaje aquí (máx. 1000 caracteres)"
+
+                  required
+
+                ></textarea>
+
+                <div class="form-meta">
+
+                  <small class="error-message"></small>
+
+                  <small id="contadorMensaje">0 / 1000</small>
+
+                </div>
+
+              </div>
+
+              <div class="form-check-custom">
+
+                <input
+
+                  type="checkbox"
+
+                  id="politica"
+
+                  required
+
+                >
+
+                <label for="politica">
+
+                  Acepto la política de tratamiento de datos.
+
+                  <a
+
+                    href="#"
+
+                    target="\_blank"
+
+                    rel="noopener noreferrer"
+
+                  >
+
+                    Consulte aquí.
+
+                  </a>
+
+                </label>
+
+              </div>
+
+              <small class="error-message checkbox-error"></small>
+
+              <div class="form-actions">
+
+                <button
+
+                  type="submit"
+
+                  class="btn-contacto-enviar"
+
+                >
+
+                  Enviar mensaje
+
+                </button>
+
+              </div>
+
+              <div
+
+                id="formStatus"
+
+                class="form-status"
+
+                aria-live="polite"
+
+              ></div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+
+       FOOTER SUPERIOR
+
+       ===================================================== -->
+
+  <section class="footer-recursos footer-recursos-interno">
+
+    <div class="container">
+
+      <div class="footer-wrapper footer-wrapper-simple">
+
+        <div class="footer-col-block footer-brand-block">
+
+          <img src="assets/img/logobiblio.png" alt="Biblioteca" class="footer-biblio-logo">
+
+        </div>
+
+        <div class="footer-col-block footer-info-block">
+
+          <h4>Horario de atención</h4>
+
+          <div class="footer-info-list">
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true">
+
+                <i class="bi bi-calendar3"></i>
+
+              </span>
+
+              <div class="footer-info-content">
+
+                <strong>Lunes a viernes</strong>
+
+                <p>8:00 am a 1:00 pm</p>
+
+                <p>2:00 pm a 7:00 pm</p>
+
+              </div>
+
+            </div>
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true">
+
+                <i class="bi bi-calendar3"></i>
+
+              </span>
+
+              <div class="footer-info-content">
+
+                <strong>Sábado</strong>
+
+                <p>8:00 am a 1:00 pm</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="footer-col-block footer-info-block">
+
+          <h4>Contáctanos</h4>
+
+          <div class="footer-info-list">
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true">
+
+                <i class="bi bi-geo-alt-fill"></i>
+
+              </span>
+
+              <div class="footer-info-content">
+
+                <strong>Dirección</strong>
+
+                <p>
+
+                  Centro Cultural Nhora Matallana Forero, km 1 vía Tenjo - La Punta,
+
+                  vereda Chitasuga
+
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true">
+
+                <i class="bi bi-telephone-fill"></i>
+
+              </span>
+
+              <div class="footer-info-content">
+
+                <strong>Teléfono</strong>
+
+                <a href="tel:+573007274898">+57 300 727 48 98</a>
+
+              </div>
+
+            </div>
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true">
+
+                <i class="bi bi-envelope-fill"></i>
+
+              </span>
+
+              <div class="footer-info-content">
+
+                <strong>Correos electrónicos</strong>
+
+                <a href="mailto:institutodeculturayturismo@tenjo-cundinamarca.gov.co">
+
+                  institutodeculturayturismo@tenjo-cundinamarca.gov.co
+
+                </a>
+
+                <a href="mailto:biblioteca@tenjoculturayturismo.gov.co">
+
+                  biblioteca@tenjoculturayturismo.gov.co
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =====================================================
+
+       FOOTER INFERIOR
+
+       ===================================================== -->
+
+  <footer class="footer-bottom footer-contacto">
+
+    <div class="footer-band">
+
+      <div class="container footer-bottom-content">
+
+        <div class="footer-left">
+
+          <img
+
+            src="assets/img/logotenjo.png"
+
+            alt="Escudo institucional"
+
+            class="footer-shield"
+
+          >
+
+          <p>
+
+            <a href="#">Aviso Legal</a>
+
+            <span>|</span>
+
+            <a href="#">Política de Privacidad</a>
+
+          </p>
+
+        </div>
+
+        <div class="footer-right">
+
+          <img src="assets/img/co.png" alt="Marca Colombia" class="footer-logos">
+
+          <img src="assets/img/culturablanco.png" alt="Logos institucionales" class="footer-logos">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script
+
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+
+  ></script>
+
+  <script src="assets/js/script.js?v=20260930-8"></script>
+
+  <script src="assets/js/contacto.js?v=20260930-8"></script>
+
+</body>
+
+</html>

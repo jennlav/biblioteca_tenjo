@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba API Eventos</title>
+</head>
+<body>
+
+    <h1>Eventos desde la API</h1>
+
+    <div id="eventos"></div>
+
+    <script>
+
+        fetch('http://localhost/bibliotecatenjo/api/eventos.php')
+            .then(response => response.json())
+            .then(eventos => {
+
+                const contenedor = document.getElementById('eventos');
+
+                eventos.forEach(evento => {
+
+                    contenedor.innerHTML += `
+                        <article>
+                            <h2>${evento.titulo}</h2>
+
+                            <p>${evento.descripcion}</p>
+
+                            <p>
+                                ${evento.fecha_inicio}
+                            </p>
+
+                            ${
+                                evento.imagen_url
+                                    ? `<img
+                                        src="${evento.imagen_url}"
+                                        alt="${evento.titulo}"
+                                        width="250"
+                                      >`
+                                    : '<p>Sin imagen</p>'
+                            }
+                        </article>
+
+                        <hr>
+                    `;
+                });
+
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
+    </script>
+
+</body>
+</html>

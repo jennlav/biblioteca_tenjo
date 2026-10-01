@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Actividades Transversales | Biblioteca Pública Municipal</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link href="assets/css/styles.css?v=20260930-2" rel="stylesheet">
+
+  <link href="assets/css/actividades-transversales.css?v=20260930-2" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- =====================================================
+
+       NAVEGACIÓN PRINCIPAL
+
+       Cabecera institucional, menú responsive y accesos entre vistas.
+
+       ===================================================== -->
+
+  <header class="header fixed-top">
+
+    <div class="container nav-wrapper">
+
+      <div class="logo">
+
+        <img src="assets/img/logobiblio.png" alt="Biblioteca">
+
+        <div class="logo-text">
+
+          <strong>Biblioteca Municipal Isabel Murillo de Luque</strong>
+
+          <span>Tenjo - Cundinamarca</span>
+
+        </div>
+
+      </div>
+
+      <div
+
+        class="menu-toggle"
+
+        id="menu-toggle"
+
+        aria-label="Abrir menú"
+
+        role="button"
+
+        tabindex="0"
+
+        aria-expanded="false"
+
+        aria-controls="nav-menu"
+
+      >
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+      </div>
+
+      <nav class="nav-menu" id="nav-menu">
+
+        <a href="index.html">Inicio</a>
+
+        <div class="nav-item-dropdown">
+
+          <button
+
+            class="nav-dropdown-toggle"
+
+            type="button"
+
+            aria-expanded="false"
+
+          >
+
+            Servicios
+
+            <span class="nav-caret">▾</span>
+
+          </button>
+
+          <div class="nav-submenu">
+
+            <a href="servicios.html">Servicios Básicos</a>
+
+            <a href="actividades-transversales.html" class="active" aria-current="page">Actividades Transversales</a>
+
+            <a href="programas.html">Programas Bibliotecarios</a>
+
+            <a href="eventos.html">Eventos</a>
+
+            <a href="coworking.html">Solicitud Espacios</a>
+
+            <a href="pqrs.html">PQRSDF</a>
+
+          </div>
+
+        </div>
+
+        <div class="nav-item-dropdown">
+
+          <button
+
+            class="nav-dropdown-toggle"
+
+            type="button"
+
+            aria-expanded="false"
+
+          >
+
+            Biblioteca
+
+            <span class="nav-caret">▾</span>
+
+          </button>
+
+          <div class="nav-submenu">
+
+            <a href="sedes.html">Sedes</a>
+
+            <a href="documentacion.html">Documentación Pública</a>
+
+            <a href="noticias.html">Noticias</a>
+
+            <a href="equipo.html">Equipo</a>
+
+            <a href="contacto.html">Contacto</a>
+
+          </div>
+
+        </div>
+
+        <a href="material-digital.html">Material Digital</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- =====================================================
+
+       REDES SOCIALES
+
+       Accesos persistentes a canales institucionales externos.
+
+       ===================================================== -->
+
+  <aside class="social-floating" aria-label="Redes sociales de la Biblioteca">
+
+    <a
+
+      href="https://www.facebook.com/share/1D3AH3pV28/"
+
+      target="_blank"
+
+      rel="noopener noreferrer"
+
+      class="social-floating-link social-facebook"
+
+      aria-label="Facebook"
+
+      title="Facebook"
+
+    >
+
+      <i class="bi bi-facebook" aria-hidden="true"></i>
+
+    </a>
+
+    <a
+
+      href="https://www.instagram.com/biblioteca.tenjo?igsh=MWxzM2tiNmQ5ZW1xNg=="
+
+      target="_blank"
+
+      rel="noopener noreferrer"
+
+      class="social-floating-link social-instagram"
+
+      aria-label="Instagram"
+
+      title="Instagram"
+
+    >
+
+      <i class="bi bi-instagram" aria-hidden="true"></i>
+
+    </a>
+
+    <a
+
+      href="https://www.youtube.com/canaltenjo"
+
+      target="_blank"
+
+      rel="noopener noreferrer"
+
+      class="social-floating-link social-youtube"
+
+      aria-label="YouTube"
+
+      title="YouTube"
+
+    >
+
+      <i class="bi bi-youtube" aria-hidden="true"></i>
+
+    </a>
+
+    <a
+
+      href="https://wa.me/573007274898"
+
+      target="_blank"
+
+      rel="noopener noreferrer"
+
+      class="social-floating-link social-whatsapp"
+
+      aria-label="WhatsApp"
+
+      title="WhatsApp"
+
+    >
+
+      <i class="bi bi-whatsapp" aria-hidden="true"></i>
+
+    </a>
+
+  </aside>
+
+  <main class="actividades-page">
+
+    <!-- =====================================================
+
+         ENCABEZADO DE ACTIVIDADES
+
+         Etiqueta, título y descripción sincronizados desde API.
+
+         ===================================================== -->
+
+    <section class="actividades-hero">
+
+      <div class="container">
+
+        <div class="actividades-topbar">
+
+          <div class="breadcrumb-custom">
+
+            <a href="index.html">Inicio</a>
+
+            <span>/</span>
+
+            <span class="current">Actividades Transversales</span>
+
+          </div>
+
+        </div>
+
+        <div class="actividades-hero-content">
+
+          <div class="actividades-copy">
+
+            <span
+
+              class="actividades-kicker"
+
+              id="encabezado-etiqueta"
+
+            >
+
+              Cultura y participación
+
+            </span>
+
+            <h1 id="encabezado-titulo">
+
+              Actividades Transversales
+
+            </h1>
+
+            <p id="encabezado-descripcion">
+
+              Actividades de lectura, culturales, comunitarias y de memoria
+
+              que la biblioteca desarrolla para conectar, inspirar y transformar
+
+              nuestra comunidad.
+
+            </p>
+
+            <div class="hero-accent-line"></div>
+
+          </div>
+
+          <div class="actividades-hero-visual">
+
+            <img
+
+              src="assets/img/activities/tigrilector.png"
+
+              alt="Tigrillo lector"
+
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================================
+
+         CATÁLOGO DE ACTIVIDADES
+
+         Presentación de actividades culturales y comunitarias.
+
+         ===================================================== -->
+
+    <section class="actividades-grid-section">
+
+      <div class="container">
+
+        <div class="row g-4">
+
+          <div class="col-lg-3 col-md-6">
+
+            <article class="actividad-card">
+
+              <div class="actividad-num">01</div>
+
+              <img
+
+                src="assets/img/activities/1.png"
+
+                alt="Recomendaciones literarias"
+
+              >
+
+              <h3>Recomendaciones literarias</h3>
+
+              <p>
+
+                Una selección mensual de lecturas compartida a través de nuestras redes sociales,
+
+                pensada para distintos intereses, edades y momentos de lectura.
+
+              </p>
+
+              <div class="actividad-horario">
+                <i class="bi bi-clock" aria-hidden="true"></i>
+                <span>Cada mes</span>
+              </div>
+
+              <span class="actividad-line"></span>
+
+            </article>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+
+            <article class="actividad-card">
+
+              <div class="actividad-num">02</div>
+
+              <img
+
+                src="assets/img/activities/2.png"
+
+                alt="Lectura sin etiquetas"
+
+              >
+
+              <h3>Lectura sin etiquetas</h3>
+
+              <p>
+
+                Un club de lectura que se reúne el tercer jueves de cada mes para conversar sin moldes,
+
+                explorando distintas voces, géneros y perspectivas.
+
+              </p>
+
+              <div class="actividad-horario">
+                <i class="bi bi-clock" aria-hidden="true"></i>
+                <span>Tercer jueves de cada mes</span>
+              </div>
+
+              <span class="actividad-line"></span>
+
+            </article>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+
+            <article class="actividad-card">
+
+              <div class="actividad-num">03</div>
+
+              <img
+
+                src="assets/img/activities/3.png"
+
+                alt="Arte y narrativa"
+
+              >
+
+              <h3>Arte y narrativa: Historias que inspiran</h3>
+
+              <p>
+
+                Encuentros con creadores y profesionales del ámbito cultural que comparten sus trayectorias
+
+                y la forma en que el arte atraviesa sus vidas.
+
+              </p>
+
+              <span class="actividad-line"></span>
+
+            </article>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+
+            <article class="actividad-card actividad-card-highlight">
+
+              <div class="actividad-num">04</div>
+
+              <img
+
+                src="assets/img/activities/4.png"
+
+                alt="Aventuras del Tigrillo Lector"
+
+              >
+
+              <h3>Aventuras del Tigrillo Lector</h3>
+
+              <p>
+
+                Un espacio para la primera infancia donde la lectura se vive en familia,
+
+                a través de historias, juego y exploración.
+
+              </p>
+
+              <div class="actividad-horario">
+                <i class="bi bi-clock" aria-hidden="true"></i>
+                <span>Sábados de cada mes de 10:00 a.m. a 12:00 m. en la Biblioteca Pública Municipal de Tenjo, Isabel Murillo de Luque - Sede principal</span>
+              </div>
+
+              <span class="actividad-line"></span>
+
+            </article>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+
+            <article class="actividad-card actividad-card-podcast-trigger">
+
+              <div class="actividad-num">05</div>
+
+              <img
+
+                src="assets/img/activities/5.png"
+
+                alt="Raíces y relatos de Tenjo"
+
+              >
+
+              <h3>Raíces y relatos de Tenjo</h3>
+
+              <p>
+
+                Un podcast que recoge conversaciones con personas del municipio, tejiendo memoria,
+
+                identidad y relatos que hacen parte de nuestra historia local.
+
+              </p>
+
+              <button
+
+                type="button"
+
+                class="btn-podcast"
+
+                id="abrirPodcastModal"
+
+                aria-haspopup="dialog"
+
+                aria-controls="podcastModal"
+
+              >
+
+                <i class="bi bi-mic-fill" aria-hidden="true"></i>
+
+                Escuchar podcast
+
+              </button>
+
+              <div class="actividad-horario">
+                <i class="bi bi-clock" aria-hidden="true"></i>
+                <span>Cada mes</span>
+              </div>
+
+              <span class="actividad-line"></span>
+
+            </article>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+
+            <article class="actividad-card">
+
+              <div class="actividad-num">06</div>
+
+              <img
+
+                src="assets/img/activities/6.png"
+
+                alt="Cuentos para sanar y sonreír"
+
+              >
+
+              <h3>Cuentos para sanar y sonreír</h3>
+
+              <p>
+
+                Una iniciativa que lleva la lectura en voz alta al Hospital Santa Rosa de Tenjo,
+
+                acompañando a pacientes y familias con historias que ofrecen consuelo, cercanía
+
+                y un respiro en medio de los procesos de cuidado y recuperación.
+
+              </p>
+
+              <div class="actividad-horario">
+                <i class="bi bi-clock" aria-hidden="true"></i>
+                <span>Todos los jueves de cada mes en el Hospital Santa Rosa, Tenjo, de 9:00 a.m. a 11:00 a.m.</span>
+              </div>
+
+              <span class="actividad-line"></span>
+
+            </article>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+
+            <article class="actividad-card">
+
+              <div class="actividad-num">07</div>
+
+              <img
+
+                src="assets/img/activities/7.png"
+
+                alt="Club de la memoria viva"
+
+              >
+
+              <h3>Club de la memoria viva</h3>
+
+              <p>
+
+                Un espacio de diálogo y reflexión que aporta a la construcción de memoria colectiva,
+
+                reconociendo voces, experiencias e historias del territorio.
+
+              </p>
+
+              <div class="actividad-horario">
+                <i class="bi bi-clock" aria-hidden="true"></i>
+                <span>Tercer martes de cada mes en la Escuela de Artes Vivas, Saberes y Oficios del Territorio de Tenjo - EAVISOT, a las 5:00 p.m.</span>
+              </div>
+
+              <span class="actividad-line"></span>
+
+            </article>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+
+            <article class="actividad-card">
+
+              <div class="actividad-num">08</div>
+
+              <img
+
+                src="assets/img/activities/8.png"
+
+                alt="Tigrillo al parque"
+
+              >
+
+              <h3>Tigrillo al parque</h3>
+
+              <p>
+
+                La biblioteca se traslada al aire libre para encontrarse con la comunidad en parques
+
+                y espacios cotidianos, llevando libros, juego y lectura a nuevos escenarios.
+
+              </p>
+
+              <div class="actividad-horario">
+                <i class="bi bi-clock" aria-hidden="true"></i>
+                <span>De acuerdo con la programación establecida por la biblioteca.</span>
+              </div>
+
+              <span class="actividad-line"></span>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================================
+
+         MODAL DE PODCAST
+
+         Reproducción de episodios asociados a memoria local.
+
+         ===================================================== -->
+
+    <div
+
+      class="podcast-modal"
+
+      id="podcastModal"
+
+      aria-hidden="true"
+
+    >
+
+      <div
+
+        class="podcast-modal-overlay"
+
+        id="podcastModalOverlay"
+
+      ></div>
+
+      <div
+
+        class="podcast-modal-dialog"
+
+        role="dialog"
+
+        aria-modal="true"
+
+        aria-labelledby="podcastModalTitle"
+
+      >
+
+        <button
+
+          type="button"
+
+          class="podcast-modal-close"
+
+          id="podcastModalClose"
+
+          aria-label="Cerrar modal"
+
+        >
+
+          ×
+
+        </button>
+
+        <div class="podcast-modal-header">
+
+          <span class="podcast-modal-kicker">
+
+            Podcast de memoria local
+
+          </span>
+
+          <h2 id="podcastModalTitle">
+
+            Raíces y relatos de Tenjo
+
+          </h2>
+
+          <p>
+
+            Conversaciones que preservan la memoria, la identidad y las voces
+
+            de quienes hacen parte de la historia del municipio.
+
+          </p>
+
+        </div>
+
+        <div class="podcast-modal-list">
+
+          <article class="podcast-modal-episode">
+
+            <div class="podcast-modal-episode-info">
+
+              <span>Episodio 01</span>
+
+              <h3>Título del episodio</h3>
+
+              <p>Descripción breve del contenido del episodio.</p>
+
+            </div>
+
+            <audio
+
+              controls
+
+              preload="none"
+
+              class="podcast-modal-audio"
+
+            >
+
+              <!--
+
+                Cuando tengas el audio, agrega:
+
+                <source src="assets/audio/podcast/episodio-01.mp3" type="audio/mpeg">
+
+              -->
+
+              Tu navegador no admite la reproducción de audio.
+
+            </audio>
+
+          </article>
+
+          <article class="podcast-modal-episode">
+
+            <div class="podcast-modal-episode-info">
+
+              <span>Episodio 02</span>
+
+              <h3>Título del episodio</h3>
+
+              <p>Descripción breve del contenido del episodio.</p>
+
+            </div>
+
+            <audio
+
+              controls
+
+              preload="none"
+
+              class="podcast-modal-audio"
+
+            >
+
+              <!--
+
+                Cuando tengas el audio, agrega:
+
+                <source src="assets/audio/podcast/episodio-02.mp3" type="audio/mpeg">
+
+              -->
+
+              Tu navegador no admite la reproducción de audio.
+
+            </audio>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- =====================================================
+
+         LLAMADO A LA ACCIÓN
+
+         Acceso a la programación bibliotecaria complementaria.
+
+         ===================================================== -->
+
+    <section class="actividades-cta">
+
+      <div class="container">
+
+        <div class="actividades-cta-box">
+
+          <div class="cta-visual">
+
+            <div class="cta-books">📖 ☕</div>
+
+          </div>
+
+          <div class="cta-copy">
+
+            <h2>¡Participa, comparte, transforma!</h2>
+
+            <p>
+
+              Nuestras actividades son abiertas, inclusivas y gratuitas.
+
+              Consulta nuestras redes y carteleras para conocer fechas, lugares y novedades.
+
+            </p>
+
+          </div>
+
+          <div class="cta-action">
+
+            <a
+
+              href="programas.html"
+
+              class="btn btn-main"
+
+            >
+
+              Conoce Nuestros Programas
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================================
+
+         INFORMACIÓN INSTITUCIONAL
+
+         Horarios de atención y canales de contacto compartidos.
+
+         ===================================================== -->
+
+    <section class="footer-recursos footer-recursos-interno">
+
+      <div class="container">
+
+        <div class="footer-wrapper footer-wrapper-simple">
+
+          <div class="footer-col-block footer-brand-block">
+
+            <img
+
+              src="assets/img/logobiblio.png"
+
+              alt="Biblioteca"
+
+              class="footer-biblio-logo"
+
+            >
+
+          </div>
+
+          <div class="footer-col-block footer-info-block">
+
+            <h4>Horario de atención</h4>
+
+            <div class="footer-info-list">
+
+              <div class="footer-info-item">
+
+                <span
+
+                  class="footer-info-icon"
+
+                  aria-hidden="true"
+
+                >
+
+                  <i class="bi bi-calendar3"></i>
+
+                </span>
+
+                <div class="footer-info-content">
+
+                  <strong>Lunes a viernes</strong>
+
+                  <p>8:00 am a 1:00 pm</p>
+
+                  <p>2:00 pm a 7:00 pm</p>
+
+                </div>
+
+              </div>
+
+              <div class="footer-info-item">
+
+                <span
+
+                  class="footer-info-icon"
+
+                  aria-hidden="true"
+
+                >
+
+                  <i class="bi bi-calendar3"></i>
+
+                </span>
+
+                <div class="footer-info-content">
+
+                  <strong>Sábado</strong>
+
+                  <p>8:00 am a 1:00 pm</p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="footer-col-block footer-info-block">
+
+            <h4>Contáctanos</h4>
+
+            <div class="footer-info-list">
+
+              <div class="footer-info-item">
+
+                <span
+
+                  class="footer-info-icon"
+
+                  aria-hidden="true"
+
+                >
+
+                  <i class="bi bi-geo-alt-fill"></i>
+
+                </span>
+
+                <div class="footer-info-content">
+
+                  <strong>Dirección</strong>
+
+                  <p>
+
+                    Centro Cultural Nhora Matallana Forero, km 1 vía Tenjo - La Punta,
+
+                    vereda Chitasuga
+
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div class="footer-info-item">
+
+                <span
+
+                  class="footer-info-icon"
+
+                  aria-hidden="true"
+
+                >
+
+                  <i class="bi bi-telephone-fill"></i>
+
+                </span>
+
+                <div class="footer-info-content">
+
+                  <strong>Teléfono</strong>
+
+                  <a href="tel:+573007274898">
+
+                    +57 300 727 48 98
+
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="footer-info-item">
+
+                <span
+
+                  class="footer-info-icon"
+
+                  aria-hidden="true"
+
+                >
+
+                  <i class="bi bi-envelope-fill"></i>
+
+                </span>
+
+                <div class="footer-info-content">
+
+                  <strong>Correos electrónicos</strong>
+
+                  <a href="mailto:institutodeculturayturismo@tenjo-cundinamarca.gov.co">
+
+                    institutodeculturayturismo@tenjo-cundinamarca.gov.co
+
+                  </a>
+
+                  <a href="mailto:biblioteca@tenjoculturayturismo.gov.co">
+
+                    biblioteca@tenjoculturayturismo.gov.co
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+
+       PIE INSTITUCIONAL
+
+       Identidad gráfica y accesos legales del sitio.
+
+       ===================================================== -->
+
+  <footer class="footer-bottom">
+
+    <div class="footer-band">
+
+      <div class="container footer-bottom-content">
+
+        <div class="footer-left">
+
+          <img
+
+            src="assets/img/logotenjo.png"
+
+            alt="Escudo institucional"
+
+            class="footer-shield"
+
+          >
+
+          <p>
+
+            <a href="#">Aviso Legal</a>
+
+            <span>|</span>
+
+            <a href="#">Política de Privacidad</a>
+
+          </p>
+
+        </div>
+
+        <div class="footer-right">
+
+          <img
+
+            src="assets/img/co.png"
+
+            alt="Marca Colombia"
+
+            class="footer-logos"
+
+          >
+
+          <img
+
+            src="assets/img/culturablanco.png"
+
+            alt="Logos institucionales"
+
+            class="footer-logos"
+
+          >
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/script.js?v=20260930-2"></script>
+
+  <script src="assets/js/actividades-transversales.js?v=20260930-2"></script>
+
+</body>
+
+</html>

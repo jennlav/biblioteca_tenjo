@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Reserva de Coworking | Biblioteca Pública Municipal</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Fredoka:wght@400;500;600;700&family=Londrina+Solid:wght@300;400;900&display=swap" rel="stylesheet">
+
+  <link href="assets/css/styles.css?v=20260930-3" rel="stylesheet">
+
+  <link href="assets/css/coworking.css?v=20260930-3" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="header fixed-top">
+
+    <div class="container nav-wrapper">
+
+      <div class="logo">
+
+        <img src="assets/img/logobiblio.png" alt="Biblioteca">
+
+        <div class="logo-text">
+
+          <strong>Biblioteca Municipal Isabel Murillo de Luque</strong>
+
+          <span>Tenjo - Cundinamarca</span>
+
+        </div>
+
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" role="button" tabindex="0" aria-expanded="false" aria-controls="nav-menu">
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+      </div>
+
+      <nav class="nav-menu" id="nav-menu">
+
+        <a href="index.html">Inicio</a>
+
+        <div class="nav-item-dropdown">
+
+          <button
+
+            class="nav-dropdown-toggle"
+
+            type="button"
+
+            aria-expanded="false"
+
+          >
+
+            Servicios
+
+            <span class="nav-caret">▾</span>
+
+          </button>
+
+          <div class="nav-submenu">
+
+            <a href="servicios.html">Servicios Básicos</a>
+
+            <a href="actividades-transversales.html">Actividades Transversales</a>
+
+            <a href="programas.html">Programas Bibliotecarios</a>
+
+            <a href="eventos.html">Eventos</a>
+
+            <a href="coworking.html" class="active" aria-current="page">Solicitud Espacios</a>
+
+            <a href="pqrs.html">PQRSDF</a>
+
+          </div>
+
+        </div>
+
+        <div class="nav-item-dropdown">
+
+          <button
+
+            class="nav-dropdown-toggle"
+
+            type="button"
+
+            aria-expanded="false"
+
+          >
+
+            Biblioteca
+
+            <span class="nav-caret">▾</span>
+
+          </button>
+
+          <div class="nav-submenu">
+
+            <a href="sedes.html">Sedes</a>
+
+            <a href="documentacion.html">Documentación Pública</a>
+            <a href="noticias.html">Noticias</a>
+
+            <a href="equipo.html">Equipo</a>
+
+            <a href="contacto.html">Contacto</a>
+
+          </div>
+
+        </div>
+
+        <a href="material-digital.html">Material Digital</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- REDES SOCIALES FLOTANTES -->
+
+  <aside class="social-floating" aria-label="Redes sociales de la Biblioteca">
+
+    <a href="https://www.facebook.com/share/1D3AH3pV28/" target="_blank" rel="noopener noreferrer" class="social-floating-link social-facebook" aria-label="Facebook" title="Facebook">
+
+      <i class="bi bi-facebook" aria-hidden="true"></i>
+
+    </a>
+
+    <a href="https://www.instagram.com/biblioteca.tenjo?igsh=MWxzM2tiNmQ5ZW1xNg==" target="_blank" rel="noopener noreferrer" class="social-floating-link social-instagram" aria-label="Instagram" title="Instagram">
+
+      <i class="bi bi-instagram" aria-hidden="true"></i>
+
+    </a>
+
+    <a href="https://www.youtube.com/canaltenjo" target="_blank" rel="noopener noreferrer" class="social-floating-link social-youtube" aria-label="YouTube" title="YouTube">
+
+      <i class="bi bi-youtube" aria-hidden="true"></i>
+
+    </a>
+
+    <a href="https://wa.me/573007274898" target="_blank" rel="noopener noreferrer" class="social-floating-link social-whatsapp" aria-label="WhatsApp" title="WhatsApp">
+
+      <i class="bi bi-whatsapp" aria-hidden="true"></i>
+
+    </a>
+
+  </aside>
+
+  <main class="coworking-page">
+
+    <section class="coworking-hero">
+
+      <div class="container">
+
+        <div class="coworking-topbar">
+
+          <div class="breadcrumb-custom">
+
+            <a href="index.html">Inicio</a>
+
+            <span>/</span>
+
+            <a href="servicios.html">Servicios</a>
+
+            <span>/</span>
+
+            <span class="current">Reserva de Coworking</span>
+
+          </div>
+
+          <form class="search-coworking" role="search">
+
+            <input type="text" placeholder="Buscar en la biblioteca..." aria-label="Buscar en la biblioteca">
+
+            <button type="submit" aria-label="Buscar"><i class="bi bi-search" aria-hidden="true"></i></button>
+
+          </form>
+
+        </div>
+
+        <div class="coworking-hero-content">
+
+          <div class="coworking-copy">
+
+            <span class="coworking-kicker" id="encabezado-etiqueta">Solicitud de espacios</span>
+              <h1 id="encabezado-titulo">Reserva tu espacio de coworking</h1>
+
+            <p>
+
+              Solicita tu reserva para estudiar, trabajar, reunirte o desarrollar
+
+              proyectos en un entorno cómodo, tranquilo y pensado para la comunidad.
+
+            </p>
+
+            <div class="coworking-alert-box">
+
+              Completa el <strong>formulario de reserva</strong>. Una vez recibida tu solicitud,
+
+              revisaremos la disponibilidad del espacio y te confirmaremos la asignación.
+
+            </div>
+
+          </div>
+
+          <div class="coworking-hero-visual">
+
+            <img src="assets/img/coworking/tigricow.png" alt="Mascota de la biblioteca en coworking">
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="coworking-form-section">
+
+      <div class="container">
+
+        <div class="coworking-grid">
+
+          <aside class="coworking-sidebar">
+
+            <div class="coworking-info-card">
+
+              <h2>Información del espacio</h2>
+
+              <div class="coworking-line">
+
+                <span class="coworking-icon"><i class="bi bi-person-workspace" aria-hidden="true"></i></span>
+
+                <p>Espacios disponibles para estudio, trabajo individual y reuniones pequeñas.</p>
+
+              </div>
+
+              <div class="coworking-line">
+
+                <span class="coworking-icon"><i class="bi bi-clock-fill" aria-hidden="true"></i></span>
+
+                <p>Lunes a viernes: 8:00 AM - 6:00 PM / Sábado: 9:00 AM - 1:00 PM.</p>
+
+              </div>
+
+              <div class="coworking-line">
+
+                <span class="coworking-icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i></span>
+
+                <p>Biblioteca Municipal Isabel Murillo de Luque, Tenjo - Cundinamarca.</p>
+
+              </div>
+
+              <div class="coworking-line">
+
+                <span class="coworking-icon"><i class="bi bi-envelope-check-fill" aria-hidden="true"></i></span>
+
+                <p>La reserva está sujeta a disponibilidad y validación previa.</p>
+
+              </div>
+
+            </div>
+
+            <div class="coworking-spaces-title">
+
+              <span class="coworking-spaces-title-icon" aria-hidden="true">
+
+                <i class="bi bi-grid-1x2-fill"></i>
+
+              </span>
+
+              <h3>Espacios Disponibles:</h3>
+
+            </div>
+
+            <div class="coworking-spaces-sidebar-list" aria-label="Espacios disponibles">
+
+              <article class="coworking-space-sidebar-card">
+
+                <img src="assets/img/coworking/box1.JPG" alt="Box de lectura">
+
+                <span class="coworking-space-sidebar-title">Box de lectura</span>
+
+              </article>
+
+              <article class="coworking-space-sidebar-card">
+
+                <img src="assets/img/coworking/alas1.JPEG" alt="Sala Alas de Papel">
+
+                <span class="coworking-space-sidebar-title">Sala Alas de Papel</span>
+
+              </article>
+
+              <article class="coworking-space-sidebar-card">
+
+                <img src="assets/img/coworking/trabajo1.JPG" alt="Sala de trabajo">
+
+                <span class="coworking-space-sidebar-title">Sala de trabajo</span>
+
+              </article>
+
+              <article class="coworking-space-sidebar-card">
+
+                <img src="assets/img/coworking/computadores1.JPG" alt="Préstamo de Computadores">
+
+                <span class="coworking-space-sidebar-title">Préstamo de Computadores</span>
+
+              </article>
+
+            </div>
+
+          </aside>
+
+          <div class="coworking-form-wrapper">
+
+            <form id="coworkingForm" class="coworking-form" novalidate>
+
+              <div class="section-title">
+
+                <h3>Datos del solicitante <span>*</span></h3>
+
+              </div>
+
+              <div class="form-group">
+
+                <label for="nombreCoworking">Nombre completo <span>*</span></label>
+
+                <input type="text" id="nombreCoworking" name="nombreCoworking" placeholder="Tu nombre y apellidos" required>
+
+                <small class="error-message"></small>
+
+              </div>
+
+              <div class="form-row two-cols">
+
+                <div class="form-group">
+
+                  <label for="correoCoworking">Correo electrónico <span>*</span></label>
+
+                  <input type="email" id="correoCoworking" name="correoCoworking" placeholder="Tu correo electrónico" required>
+
+                  <small class="error-message"></small>
+
+                </div>
+
+                <div class="form-group">
+
+                  <label for="telefonoCoworking">Teléfono o celular <span>*</span></label>
+
+                  <input type="text" id="telefonoCoworking" name="telefonoCoworking" placeholder="Tu teléfono o celular" required>
+
+                  <small class="error-message"></small>
+
+                </div>
+
+              </div>
+
+              <div class="section-title section-spaced">
+
+                <h3>Datos de la reserva <span>*</span></h3>
+
+              </div>
+
+              <div class="form-group">
+
+                <label for="espacioReserva">Espacio solicitado <span>*</span></label>
+
+                <select id="espacioReserva" name="espacioReserva" required>
+
+                  <option value="">Selecciona un espacio</option>
+
+                  <option value="box-lectura">Box de lectura</option>
+
+                  <option value="sala-alas-papel">Sala Alas de Papel</option>
+
+                  <option value="sala-trabajo">Sala de trabajo</option>
+
+                  <option value="computadores">Préstamo de Computadores</option>
+
+                </select>
+
+                <small class="error-message"></small>
+
+              </div>
+
+              <div
+
+                class="coworking-space-preview"
+
+                id="espacioPreview"
+
+                hidden
+
+                aria-live="polite"
+
+              >
+
+                <div class="coworking-space-preview-head">
+
+                  <div>
+
+                    <span class="space-preview-kicker">Espacio seleccionado</span>
+
+                    <h4 id="espacioPreviewTitulo"></h4>
+
+                  </div>
+
+                  <span class="space-preview-icon" aria-hidden="true">
+
+                    <i class="bi bi-images"></i>
+
+                  </span>
+
+                </div>
+
+                <div class="coworking-space-gallery">
+
+                  <figure class="coworking-space-photo">
+
+                    <img id="espacioImagen1" src="" alt="">
+
+                  </figure>
+
+                  <figure class="coworking-space-photo">
+
+                    <img id="espacioImagen2" src="" alt="">
+
+                  </figure>
+
+                </div>
+
+                <p class="coworking-space-note">
+
+                  Vista del espacio seleccionado.
+
+                </p>
+
+              </div>
+
+              <div class="form-row two-cols">
+
+                <div class="form-group">
+
+                  <label for="fechaReserva">Fecha de reserva <span>*</span></label>
+
+                  <input type="date" id="fechaReserva" name="fechaReserva" required>
+
+                  <small class="error-message"></small>
+
+                </div>
+
+                <div class="form-group">
+
+                  <label for="horarioReserva">Horario solicitado <span>*</span></label>
+
+                  <select id="horarioReserva" name="horarioReserva" required>
+
+                    <option value="">Selecciona una opción</option>
+
+                    <option value="8-10">8:00 AM - 10:00 AM</option>
+
+                    <option value="10-12">10:00 AM - 12:00 PM</option>
+
+                    <option value="12-2">12:00 PM - 2:00 PM</option>
+
+                    <option value="2-4">2:00 PM - 4:00 PM</option>
+
+                    <option value="4-6">4:00 PM - 6:00 PM</option>
+
+                  </select>
+
+                  <small class="error-message"></small>
+
+                </div>
+
+              </div>
+
+              <div class="form-row two-cols">
+
+                <div class="form-group">
+
+                  <label for="tipoUso">Tipo de uso <span>*</span></label>
+
+                  <select id="tipoUso" name="tipoUso" required>
+
+                    <option value="">Selecciona una opción</option>
+
+                    <option value="estudio">Estudio individual</option>
+
+                    <option value="trabajo">Trabajo</option>
+
+                    <option value="reunion">Reunión</option>
+
+                    <option value="proyecto">Proyecto académico</option>
+
+                    <option value="otro">Otro</option>
+
+                  </select>
+
+                  <small class="error-message"></small>
+
+                </div>
+
+                <div class="form-group">
+
+                  <label for="cantidadPersonas">Cantidad de personas <span>*</span></label>
+
+                  <select id="cantidadPersonas" name="cantidadPersonas" required>
+
+                    <option value="">Selecciona</option>
+
+                    <option value="1">1 persona</option>
+
+                    <option value="2">2 personas</option>
+
+                    <option value="3">3 personas</option>
+
+                    <option value="4">4 personas</option>
+
+                    <option value="5">5 personas o más</option>
+
+                  </select>
+
+                  <small class="error-message"></small>
+
+                </div>
+
+              </div>
+
+              <div class="form-group">
+
+                <label for="detalleReserva">Descripción o necesidad del espacio <span>*</span></label>
+
+                <textarea id="detalleReserva" name="detalleReserva" rows="6" maxlength="800" placeholder="Cuéntanos para qué necesitas el espacio y cualquier requerimiento importante" required></textarea>
+
+                <div class="form-meta">
+
+                  <small class="error-message"></small>
+
+                  <small id="contadorDetalle">0 / 800</small>
+
+                </div>
+
+              </div>
+
+              <div class="form-check-custom">
+
+                <input type="checkbox" id="politicaCoworking" required>
+
+                <label for="politicaCoworking">
+
+                  Acepto la política de tratamiento de datos.
+
+                  <a href="#" target="_blank" rel="noopener noreferrer">Consulte aquí.</a>
+
+                </label>
+
+              </div>
+
+              <small class="error-message checkbox-error"></small>
+
+              <div class="form-actions">
+
+                <button type="submit" class="btn-coworking-enviar">Enviar Solicitud</button>
+
+              </div>
+
+              <div id="coworkingFormStatus" class="form-status" aria-live="polite"></div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <section class="footer-recursos footer-recursos-interno">
+
+    <div class="container">
+
+      <div class="footer-wrapper footer-wrapper-simple">
+
+        <div class="footer-col-block footer-brand-block">
+
+          <img src="assets/img/logobiblio.png" alt="Biblioteca" class="footer-biblio-logo">
+
+        </div>
+
+        <div class="footer-col-block footer-info-block">
+
+          <h4>Horario de atención</h4>
+
+          <div class="footer-info-list">
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true">
+
+                <i class="bi bi-calendar3"></i>
+
+              </span>
+
+              <div class="footer-info-content">
+
+                <strong>Lunes a viernes</strong>
+
+                <p>8:00 am a 1:00 pm</p>
+
+                <p>2:00 pm a 7:00 pm</p>
+
+              </div>
+
+            </div>
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true">
+
+                <i class="bi bi-calendar3"></i>
+
+              </span>
+
+              <div class="footer-info-content">
+
+                <strong>Sábado</strong>
+
+                <p>8:00 am a 1:00 pm</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="footer-col-block footer-info-block">
+
+          <h4>Contáctanos</h4>
+
+          <div class="footer-info-list">
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true">
+
+                <i class="bi bi-geo-alt-fill"></i>
+
+              </span>
+
+              <div class="footer-info-content">
+
+                <strong>Dirección</strong>
+
+                <p>Centro Cultural Nhora Matallana Forero, km 1 vía Tenjo - La Punta, vereda Chitasuga</p>
+
+              </div>
+
+            </div>
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true">
+
+                <i class="bi bi-telephone-fill"></i>
+
+              </span>
+
+              <div class="footer-info-content">
+
+                <strong>Teléfono</strong>
+
+                <a href="tel:+573007274898">+57 300 727 48 98</a>
+
+              </div>
+
+            </div>
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true">
+
+                <i class="bi bi-envelope-fill"></i>
+
+              </span>
+
+              <div class="footer-info-content">
+
+                <strong>Correos electrónicos</strong>
+
+                <a href="mailto:institutodeculturayturismo@tenjo-cundinamarca.gov.co">
+
+                  institutodeculturayturismo@tenjo-cundinamarca.gov.co
+
+                </a>
+
+                <a href="mailto:biblioteca@tenjoculturayturismo.gov.co">
+
+                  biblioteca@tenjoculturayturismo.gov.co
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="footer-bottom">
+
+    <div class="footer-band">
+
+      <div class="container footer-bottom-content">
+
+        <div class="footer-left">
+
+          <img src="assets/img/logotenjo.png" alt="Escudo institucional" class="footer-shield">
+
+          <p>
+
+            <a href="#">Aviso Legal</a>
+
+            <span>|</span>
+
+            <a href="#">Política de Privacidad</a>
+
+          </p>
+
+        </div>
+
+        <div class="footer-right">
+
+          <img src="assets/img/co.png" alt="Marca Colombia" class="footer-logos">
+
+          <img src="assets/img/culturablanco.png" alt="Logos institucionales" class="footer-logos">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/script.js?v=20260930-3"></script>
+
+  <script src="assets/js/coworking.js?v=20260930-3"></script>
+
+</body>
+
+</html>

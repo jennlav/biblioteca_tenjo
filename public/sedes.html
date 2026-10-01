@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sedes | Biblioteca Pública Municipal</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Fredoka:wght@400;500;600;700&family=Londrina+Solid:wght@300;400;900&display=swap" rel="stylesheet">
+
+  <link href="assets/css/styles.css?v=20260930-4" rel="stylesheet">
+
+  <link href="assets/css/sedes.css?v=20260930-4" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="header fixed-top">
+
+    <div class="container nav-wrapper">
+
+      <div class="logo">
+
+        <img src="assets/img/logobiblio.png" alt="Biblioteca">
+
+        <div class="logo-text">
+
+          <strong>Biblioteca Municipal Isabel Murillo de Luque</strong>
+
+          <span>Tenjo - Cundinamarca</span>
+
+        </div>
+
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" role="button" tabindex="0" aria-expanded="false" aria-controls="nav-menu">
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+      </div>
+
+      <nav class="nav-menu" id="nav-menu">
+
+        <a href="index.html">Inicio</a>
+
+        <div class="nav-item-dropdown">
+
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+
+            Servicios
+
+            <span class="nav-caret">▾</span>
+
+          </button>
+
+          <div class="nav-submenu">
+
+            <a href="servicios.html">Servicios Básicos</a>
+
+            <a href="actividades-transversales.html">Actividades Transversales</a>
+
+            <a href="programas.html">Programas Bibliotecarios</a>
+
+            <a href="eventos.html">Eventos</a>
+
+            <a href="coworking.html">Solicitud Espacios</a>
+
+            <a href="pqrs.html">PQRSDF</a>
+
+          </div>
+
+        </div>
+
+        <div class="nav-item-dropdown">
+
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+
+            Biblioteca
+
+            <span class="nav-caret">▾</span>
+
+          </button>
+
+          <div class="nav-submenu">
+
+            <a href="sedes.html" class="active" aria-current="page">Sedes</a>
+
+            <a href="documentacion.html">Documentación Pública</a>
+
+            <a href="noticias.html">Noticias</a>
+
+            <a href="equipo.html">Equipo</a>
+
+            <a href="contacto.html">Contacto</a>
+
+          </div>
+
+        </div>
+
+        <a href="material-digital.html">Material Digital</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <aside class="social-floating" aria-label="Redes sociales de la Biblioteca">
+
+    <a href="https://www.facebook.com/share/1D3AH3pV28/" target="_blank" rel="noopener noreferrer" class="social-floating-link social-facebook" aria-label="Facebook" title="Facebook">
+
+      <i class="bi bi-facebook" aria-hidden="true"></i>
+
+    </a>
+
+    <a href="https://www.instagram.com/biblioteca.tenjo?igsh=MWxzM2tiNmQ5ZW1xNg==" target="_blank" rel="noopener noreferrer" class="social-floating-link social-instagram" aria-label="Instagram" title="Instagram">
+
+      <i class="bi bi-instagram" aria-hidden="true"></i>
+
+    </a>
+
+    <a href="https://www.youtube.com/canaltenjo" target="_blank" rel="noopener noreferrer" class="social-floating-link social-youtube" aria-label="YouTube" title="YouTube">
+
+      <i class="bi bi-youtube" aria-hidden="true"></i>
+
+    </a>
+
+    <a href="https://wa.me/573007274898" target="_blank" rel="noopener noreferrer" class="social-floating-link social-whatsapp" aria-label="WhatsApp" title="WhatsApp">
+
+      <i class="bi bi-whatsapp" aria-hidden="true"></i>
+
+    </a>
+
+  </aside>
+
+  <main class="sedes-page">
+
+    <section class="sedes-hero">
+
+      <div class="container">
+
+        <div class="sedes-topbar">
+
+          <div class="breadcrumb-custom">
+
+            <a href="index.html">Inicio</a>
+
+            <span>/</span>
+
+            <span class="current">Sedes</span>
+
+          </div>
+
+        </div>
+
+        <div class="sedes-hero-content">
+
+          <div class="sedes-copy">
+
+            <span class="sedes-kicker" id="encabezado-etiqueta">Biblioteca en el territorio</span>
+
+            <h1 id="encabezado-titulo">Nuestras sedes</h1>
+
+            <p id="encabezado-descripcion">
+
+              Espacios que acercan la lectura, el conocimiento y la vida
+
+              cultural a distintos puntos del territorio, fortaleciendo el
+
+              vínculo entre la biblioteca y la comunidad.
+
+            </p>
+
+            <div class="hero-accent-line"></div>
+
+          </div>
+
+          <div class="sedes-hero-visual">
+
+            <img src="assets/img/activities/tigrilector.png" alt="Tigrillo lector">
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="sedes-intro">
+
+      <div class="container">
+
+        <div class="sedes-intro-box">
+
+          <span class="sedes-intro-icon" aria-hidden="true">
+
+            <i class="bi bi-map-fill"></i>
+
+          </span>
+
+          <div>
+
+            <h2>La biblioteca en el territorio</h2>
+
+            <p>
+
+              Cada sede cumple un papel importante en el acceso a la lectura,
+
+              la formación, el encuentro comunitario y la circulación de
+
+              saberes. Desde el centro del municipio hasta espacios rurales e
+
+              itinerantes, las sedes amplían la presencia de la biblioteca y
+
+              permiten llegar a públicos diversos.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="sedes-grid-section">
+
+      <div class="container">
+
+        <div class="row g-4">
+
+          <div class="col-lg-6">
+
+            <article class="sede-card">
+
+              <div class="sede-card-image">
+
+                <img src="assets/img/sede/sede1.jpeg" alt="Biblioteca Pública Municipal de Tenjo Isabel Murillo de Luque">
+
+                <div class="sede-badge">
+
+                  <i class="bi bi-building" aria-hidden="true"></i>
+
+                  Sede principal
+
+                </div>
+
+              </div>
+
+              <div class="sede-card-content">
+
+                <h3>Biblioteca Pública Municipal de Tenjo, Isabel Murillo de Luque</h3>
+
+                <h4><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Centro Cultural Nhora Matallana Forero</h4>
+
+                <p>
+
+                  El punto de partida: un espacio abierto para leer, investigar,
+
+                  encontrarse y participar en la vida cultural del municipio.
+
+                </p>
+
+                <div class="sede-schedule">
+                  <div class="sede-schedule-title">
+                    <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                    <strong>Horarios de atención</strong>
+                  </div>
+                  <p>De lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 7:00 p.m.</p>
+                  <p>Sábados de 8:00 a.m. a 1:00 p.m.</p>
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <article class="sede-card">
+
+              <div class="sede-card-image">
+
+                <img src="assets/img/sede/sede2.jpg" alt="Biblioteca Rural Itinerante de La Punta">
+
+                <div class="sede-badge sede-badge-secondary">
+
+                  <i class="bi bi-signpost-split-fill" aria-hidden="true"></i>
+
+                  Sede rural itinerante
+
+                </div>
+
+              </div>
+
+              <div class="sede-card-content">
+
+                <h3>Biblioteca Rural Itinerante (BRI) de La Punta</h3>
+
+                <h4><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Vive Digital, estación de policía de La Punta</h4>
+
+                <p>
+
+                  Un nodo cercano que acerca los servicios bibliotecarios a la
+
+                  comunidad, facilitando el acceso al conocimiento en el
+
+                  territorio.
+
+                </p>
+
+                <div class="sede-schedule">
+                  <div class="sede-schedule-title">
+                    <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                    <strong>Horarios de atención</strong>
+                  </div>
+                  <p>De acuerdo a las actividades programadas por las JAC - Junta de Acción Comunal.</p>
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <article class="sede-card">
+
+              <div class="sede-card-image">
+
+                <img src="assets/img/sede/sede3.jpg" alt="Biblioteca Rural Itinerante de Churuguaco Alto">
+
+                <div class="sede-badge sede-badge-accent">
+
+                  <i class="bi bi-tree-fill" aria-hidden="true"></i>
+
+                  Sede rural
+
+                </div>
+
+              </div>
+
+              <div class="sede-card-content">
+
+                <h3>Biblioteca Rural Itinerante (BRI) de Churuguaco Alto</h3>
+
+                <h4><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Escuela de Churuguaco Alto</h4>
+
+                <p>
+
+                  Un espacio que articula la lectura con la vida rural,
+
+                  fortaleciendo procesos educativos y comunitarios desde la
+
+                  escuela.
+
+                </p>
+
+                <div class="sede-schedule">
+                  <div class="sede-schedule-title">
+                    <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                    <strong>Horarios de atención</strong>
+                  </div>
+                  <p>De acuerdo a las actividades programadas por las JAC - Junta de Acción Comunal.</p>
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <article class="sede-card">
+
+              <div class="sede-card-image">
+
+                <img src="assets/img/sede/sede4.JPG" alt="Biblioteca Municipal de Tenjo sede Casa 13">
+
+                <div class="sede-badge">
+
+                  <i class="bi bi-house-door-fill" aria-hidden="true"></i>
+
+                  Sede alterna
+
+                </div>
+
+              </div>
+
+              <div class="sede-card-content">
+
+                <h3>Escuela de Artes Vivas, Saberes y Oficios del Territorio de Tenjo - EAVISOT</h3>
+
+                <h4><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Espacio complementario</h4>
+
+                <p>
+
+                  Un lugar alterno que amplía las posibilidades de encuentro,
+
+                  creación y circulación de saberes.
+
+                </p>
+
+                <div class="sede-schedule">
+                  <div class="sede-schedule-title">
+                    <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                    <strong>Horarios de atención</strong>
+                  </div>
+                  <p>Lunes a jueves de 3:30 p.m. a 7:30 p.m.</p>
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="sedes-highlight">
+
+      <div class="container">
+
+        <div class="sedes-highlight-box">
+
+          <div class="highlight-visual" aria-hidden="true">
+
+            <span><i class="bi bi-book-half"></i></span>
+
+            <span><i class="bi bi-tree-fill"></i></span>
+
+            <span><i class="bi bi-house-heart-fill"></i></span>
+
+          </div>
+
+          <div class="highlight-copy">
+
+            <h2>Una red de espacios para aprender, compartir y participar</h2>
+
+            <p>
+
+              Las sedes de la biblioteca permiten que la lectura, la memoria,
+
+              la formación y la cultura lleguen a más personas y contextos del
+
+              municipio.
+
+            </p>
+
+          </div>
+
+          <div class="highlight-action">
+
+            <a href="contacto.html" class="btn btn-main">
+
+              Contáctanos
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <section class="footer-recursos footer-recursos-interno">
+
+    <div class="container">
+
+      <div class="footer-wrapper footer-wrapper-simple">
+
+        <div class="footer-col-block footer-brand-block">
+
+          <img src="assets/img/logobiblio.png" alt="Biblioteca" class="footer-biblio-logo">
+
+        </div>
+
+        <div class="footer-col-block footer-info-block">
+
+          <h4>Horario de atención</h4>
+
+          <div class="footer-info-list">
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true"><i class="bi bi-calendar3"></i></span>
+
+              <div class="footer-info-content">
+
+                <strong>Lunes a viernes</strong>
+
+                <p>8:00 am a 1:00 pm</p>
+
+                <p>2:00 pm a 7:00 pm</p>
+
+              </div>
+
+            </div>
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true"><i class="bi bi-calendar3"></i></span>
+
+              <div class="footer-info-content">
+
+                <strong>Sábado</strong>
+
+                <p>8:00 am a 1:00 pm</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="footer-col-block footer-info-block">
+
+          <h4>Contáctanos</h4>
+
+          <div class="footer-info-list">
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true"><i class="bi bi-geo-alt-fill"></i></span>
+
+              <div class="footer-info-content">
+
+                <strong>Dirección</strong>
+
+                <p>
+
+                  Centro Cultural Nhora Matallana Forero, km 1 vía Tenjo - La Punta,
+
+                  vereda Chitasuga
+
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true"><i class="bi bi-telephone-fill"></i></span>
+
+              <div class="footer-info-content">
+
+                <strong>Teléfono</strong>
+
+                <a href="tel:+573007274898">+57 300 727 48 98</a>
+
+              </div>
+
+            </div>
+
+            <div class="footer-info-item">
+
+              <span class="footer-info-icon" aria-hidden="true"><i class="bi bi-envelope-fill"></i></span>
+
+              <div class="footer-info-content">
+
+                <strong>Correos electrónicos</strong>
+
+                <a href="mailto:institutodeculturayturismo@tenjo-cundinamarca.gov.co">
+
+                  institutodeculturayturismo@tenjo-cundinamarca.gov.co
+
+                </a>
+
+                <a href="mailto:biblioteca@tenjoculturayturismo.gov.co">
+
+                  biblioteca@tenjoculturayturismo.gov.co
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="footer-bottom">
+
+    <div class="footer-band">
+
+      <div class="container footer-bottom-content">
+
+        <div class="footer-left">
+
+          <img src="assets/img/logotenjo.png" alt="Escudo institucional" class="footer-shield">
+
+          <p>
+
+            <a href="#">Aviso Legal</a>
+
+            <span>|</span>
+
+            <a href="#">Política de Privacidad</a>
+
+          </p>
+
+        </div>
+
+        <div class="footer-right">
+
+          <img src="assets/img/co.png" alt="Marca Colombia" class="footer-logos">
+
+          <img src="assets/img/culturablanco.png" alt="Logos institucionales" class="footer-logos">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/script.js?v=20260930-4"></script>
+<script src="assets/js/sedes.js?v=20260930-4"></script>
+
+</body>
+
+</html>
