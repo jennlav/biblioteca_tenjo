@@ -8,998 +8,404 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Servicios | Biblioteca Pública Municipal</title>
+  <title>Biblioteca Pública Municipal</title>
+
+
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Fredoka:wght@400;500;600;700&family=Londrina+Solid:wght@300;400;900&display=swap" rel="stylesheet">
-
-  <link href="assets/css/styles.css?v=20260930-2" rel="stylesheet">
-
-  <link href="assets/css/servicios.css?v=20260930-2" rel="stylesheet">
+  <link href="assets/css/styles.css?v=20260929-1" rel="stylesheet">
 
 </head>
 
+
+
 <body>
 
-  <!-- =====================================================
 
-       NAVEGACIÓN PRINCIPAL
 
-       Cabecera institucional, menú responsive y accesos entre vistas.
+<header class="header fixed-top">
 
-       ===================================================== -->
+  <div class="container nav-wrapper">
 
-  <header class="header fixed-top">
 
-    <div class="container nav-wrapper">
 
-      <div class="logo">
+    <!-- Identidad institucional y navegación principal -->
 
-        <img src="assets/img/logobiblio.png" alt="Biblioteca">
+    <div class="logo">
 
-        <div class="logo-text">
+      <img src="assets/img/logobiblio.png" alt="Biblioteca">
 
-          <strong>Biblioteca Municipal Isabel Murillo de Luque</strong>
+      <div class="logo-text">
 
-          <span>Tenjo - Cundinamarca</span>
+        <strong>Biblioteca Pública Municipal Isabel Murillo de Luque</strong>
 
-        </div>
+        <span>Tenjo - Cundinamarca</span>
 
       </div>
-
-      <div
-
-        class="menu-toggle"
-
-        id="menu-toggle"
-
-        aria-label="Abrir menú"
-
-        role="button"
-
-        tabindex="0"
-
-        aria-expanded="false"
-
-        aria-controls="nav-menu"
-
-      >
-
-        <span></span>
-
-        <span></span>
-
-        <span></span>
-
-      </div>
-
-      <nav class="nav-menu" id="nav-menu">
-
-        <a href="index.html">Inicio</a>
-
-        <div class="nav-item-dropdown">
-
-          <button
-
-            class="nav-dropdown-toggle"
-
-            type="button"
-
-            aria-expanded="false"
-
-          >
-
-            Servicios
-
-            <span class="nav-caret">▾</span>
-
-          </button>
-
-          <div class="nav-submenu">
-
-            <a href="servicios.html" class="active" aria-current="page">Servicios Básicos</a>
-
-            <a href="actividades-transversales.html">Actividades Transversales</a>
-
-            <a href="programas.html">Programas Bibliotecarios</a>
-
-            <a href="eventos.html">Eventos</a>
-
-            <a href="coworking.html">Solicitud Espacios</a>
-
-            <a href="pqrs.html">PQRSDF</a>
-
-          </div>
-
-        </div>
-
-        <div class="nav-item-dropdown">
-
-          <button
-
-            class="nav-dropdown-toggle"
-
-            type="button"
-
-            aria-expanded="false"
-
-          >
-
-            Biblioteca
-
-            <span class="nav-caret">▾</span>
-
-          </button>
-
-          <div class="nav-submenu">
-
-            <a href="sedes.html">Sedes</a>
-
-            <a href="documentacion.html">Documentación Pública</a>
-
-            <a href="noticias.html">Noticias</a>
-
-            <a href="equipo.html">Equipo</a>
-
-            <a href="contacto.html">Contacto</a>
-
-          </div>
-
-        </div>
-
-        <a href="material-digital.html">Material Digital</a>
-
-      </nav>
 
     </div>
 
-  </header>
 
-  <!-- =====================================================
 
-       REDES SOCIALES
+    
 
-       Accesos persistentes a canales institucionales externos.
+    <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" role="button" tabindex="0">
 
-       ===================================================== -->
+      <span></span>
 
-  <aside class="social-floating" aria-label="Redes sociales de la Biblioteca">
+      <span></span>
 
-    <a
+      <span></span>
 
-      href="https://www.facebook.com/share/1D3AH3pV28/"
+    </div>
 
-      target="_blank"
 
-      rel="noopener noreferrer"
 
-      class="social-floating-link social-facebook"
+    
 
-      aria-label="Facebook"
+        <nav class="nav-menu" id="nav-menu">
 
-      title="Facebook"
+      <a href="index.html" class="active" aria-current="page">Inicio</a>
 
-    >
 
-      <i class="bi bi-facebook" aria-hidden="true"></i>
 
-    </a>
+      <div class="nav-item-dropdown">
 
-    <a
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
 
-      href="https://www.instagram.com/biblioteca.tenjo?igsh=MWxzM2tiNmQ5ZW1xNg=="
+          Servicios
 
-      target="_blank"
+          <span class="nav-caret">▾</span>
 
-      rel="noopener noreferrer"
+        </button>
 
-      class="social-floating-link social-instagram"
 
-      aria-label="Instagram"
 
-      title="Instagram"
+        <div class="nav-submenu">
 
-    >
+          <a href="servicios.html">Servicios Básicos</a>
 
-      <i class="bi bi-instagram" aria-hidden="true"></i>
+          <a href="actividades-transversales.html">Actividades Transversales</a>
 
-    </a>
+          <a href="programas.html">Programas Bibliotecarios</a>
 
-    <a
+          <a href="eventos.html">Eventos</a>
 
-      href="https://www.youtube.com/canaltenjo"
+          <a href="coworking.html">Solicitud Espacios</a>
 
-      target="_blank"
+          <a href="pqrs.html">PQRSDF</a>
 
-      rel="noopener noreferrer"
+        </div>
 
-      class="social-floating-link social-youtube"
+      </div>
 
-      aria-label="YouTube"
 
-      title="YouTube"
 
-    >
+      <div class="nav-item-dropdown">
+
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+
+          Biblioteca
+
+          <span class="nav-caret">▾</span>
+
+        </button>
+
+
+
+        <div class="nav-submenu">
+
+          <a href="sedes.html">Sedes</a>
+
+          <a href="documentacion.html">Documentación Pública</a>
+
+          <a href="noticias.html">Noticias</a>
+
+          <a href="equipo.html">Equipo</a>
+
+          <a href="contacto.html">Contacto</a>
+
+        </div>
+
+      </div>
+
+
+
+      <a href="material-digital.html">Material Digital</a>
+
+    </nav>
+
+
+
+  </div>
+
+</header>
+
+
+
+<!-- Accesos persistentes a canales sociales institucionales -->
+
+<aside class="social-floating" aria-label="Redes sociales de la Biblioteca">
+
+  <a href="https://www.facebook.com/share/1D3AH3pV28/" target="_blank" rel="noopener noreferrer" class="social-floating-link social-facebook" aria-label="Facebook" title="Facebook">
+
+    <i class="bi bi-facebook" aria-hidden="true"></i>
+
+  </a>
+
+
+
+  <a href="https://www.instagram.com/biblioteca.tenjo?igsh=MWxzM2tiNmQ5ZW1xNg==" target="_blank" rel="noopener noreferrer" class="social-floating-link social-instagram" aria-label="Instagram" title="Instagram">
+
+    <i class="bi bi-instagram" aria-hidden="true"></i>
+
+  </a>
+
+
+
+  <a href="https://www.youtube.com/canaltenjo" target="_blank" rel="noopener noreferrer" class="social-floating-link social-youtube" aria-label="YouTube" title="YouTube">
 
       <i class="bi bi-youtube" aria-hidden="true"></i>
 
     </a>
 
-    <a
 
-      href="#"
 
-      class="social-floating-link social-whatsapp"
+  <a href="https://wa.me/573007274898" target="_blank" rel="noopener noreferrer" class="social-floating-link social-whatsapp" aria-label="WhatsApp" title="WhatsApp">
 
-      aria-label="WhatsApp"
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
 
-      title="WhatsApp"
+  </a>
 
-    >
+</aside>
 
-      <i class="bi bi-whatsapp" aria-hidden="true"></i>
 
-    </a>
 
-  </aside>
 
-  <main class="servicios-page">
 
-    <!-- =====================================================
+<!-- Carrusel principal: contenido administrable cargado desde API -->
 
-         ENCABEZADO DE SERVICIOS
-
-         Etiqueta, título y descripción sincronizados desde API.
-
-         ===================================================== -->
-
-    <section class="servicios-hero">
-
-      <div class="container">
-
-        <div class="servicios-topbar">
-
-          <div class="breadcrumb-custom">
-
-            <a href="index.html">Inicio</a>
-
-            <span>/</span>
-
-            <span class="current">Servicios</span>
-
-          </div>
-
-          <form class="search-servicios" role="search">
-
-            <input
-
-              type="text"
-
-              placeholder="Buscar en la biblioteca..."
-
-              aria-label="Buscar en la biblioteca"
-
-            >
-
-            <button type="submit" aria-label="Buscar">🔍</button>
-
-          </form>
-
-        </div>
-
-        <div class="servicios-hero-content">
-
-          <div class="servicios-copy">
-
-            <span
-
-              class="servicios-kicker"
-
-              id="encabezado-etiqueta"
-
-            >
-
-              Servicios para todos
-
-            </span>
-
-            <h1 id="encabezado-titulo">
-
-              Servicios Bibliotecarios
-
-            </h1>
-
-            <p id="encabezado-descripcion">
-
-              Descubre los servicios que necesitas y encuentra la información
-
-              de manera clara, rápida y accesible para toda la comunidad.
-
-            </p>
-
-            <p>
-
-              Envíanos un mensaje y te responderemos lo antes posible.
-
-            </p>
-
-          </div>
-
-          <div class="servicios-hero-visual">
-
-            <img
-
-              src="assets/img/tigrilibro.png"
-
-              alt="Mascota de la biblioteca leyendo un libro"
-
-            >
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- =====================================================
-
-         CATÁLOGO DE SERVICIOS
-
-         Búsqueda local y tarjetas interactivas con detalle modal.
-
-         ===================================================== -->
-
-    <section class="servicios-listado">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <h2>Servicios Básicos</h2>
-
-        </div>
-
-        <div class="servicios-grid">
-
-          <article
-
-            class="servicio-card"
-
-            data-titulo="Bibliopréstamo externo"
-
-            data-descripcion="Permite llevar libros a casa, haciendo de la lectura una experiencia que continúa más allá de la biblioteca."
-
-            data-detalle="Este servicio facilita el préstamo de materiales para consulta fuera de la biblioteca, promoviendo el acceso a la lectura en el hogar y fortaleciendo el vínculo de la comunidad con los libros."
-            data-horario="Lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 7:00 p.m."
-
-          >
-
-            <img
-
-              src="assets/img/services/service1.JPG"
-
-              alt="Bibliopréstamo externo"
-
-              loading="lazy"
-
-            >
-
-            <div class="servicio-card-body">
-
-              <h3>
-
-                <span class="icon">📚</span>
-
-                Bibliopréstamo externo
-
-              </h3>
-
-              <p>
-
-                Permite llevar libros a casa, haciendo de la lectura una experiencia
-
-                que continúa más allá de la biblioteca.
-
-              </p>
-
-              <div class="servicio-card-horario">
-                <i class="bi bi-clock" aria-hidden="true"></i>
-                <span>Lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 7:00 p.m.</span>
-              </div>
-
-              <button
-                type="button"
-                class="servicio-card-link"
-                aria-haspopup="dialog"
-                aria-controls="modalServicio"
-              >
-                Conoce más
-                <i class="bi bi-arrow-right" aria-hidden="true"></i>
-              </button>
-            </div>
-
-          </article>
-
-          <article
-
-            class="servicio-card"
-
-            data-titulo="Bibliopréstamo interno"
-
-            data-descripcion="Espacios disponibles para la lectura y consulta en sala, ideales para estudiar o explorar sin interrupciones."
-
-            data-detalle="Ofrece consulta de materiales dentro de la biblioteca, brindando espacios cómodos y tranquilos para leer, investigar o estudiar en sala."
-            data-horario="Lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 7:00 p.m."
-
-          >
-
-            <img
-
-              src="assets/img/services/service2.jpeg"
-
-              alt="Bibliopréstamo interno"
-
-              loading="lazy"
-
-            >
-
-            <div class="servicio-card-body">
-
-              <h3>
-
-                <span class="icon">📖</span>
-
-                Bibliopréstamo interno
-
-              </h3>
-
-              <p>
-
-                Espacios disponibles para la lectura y consulta en sala, ideales
-
-                para estudiar o explorar sin interrupciones.
-
-              </p>
-
-              <div class="servicio-card-horario">
-                <i class="bi bi-clock" aria-hidden="true"></i>
-                <span>Lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 7:00 p.m.</span>
-              </div>
-
-              <button
-                type="button"
-                class="servicio-card-link"
-                aria-haspopup="dialog"
-                aria-controls="modalServicio"
-              >
-                Conoce más
-                <i class="bi bi-arrow-right" aria-hidden="true"></i>
-              </button>
-            </div>
-
-          </article>
-
-          <article
-
-            class="servicio-card"
-
-            data-titulo="Conexión al conocimiento"
-
-            data-descripcion="Acceso a herramientas tecnológicas e información que facilitan la búsqueda, el aprendizaje y la investigación."
-
-            data-detalle="Integra recursos digitales, equipos y acompañamiento para que niños, jóvenes y adultos fortalezcan sus procesos de búsqueda, consulta e investigación."
-            data-horario="Lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 7:00 p.m."
-
-          >
-
-            <img
-
-              src="assets/img/services/service3.JPG"
-
-              alt="Conexión al conocimiento"
-
-              loading="lazy"
-
-            >
-
-            <div class="servicio-card-body">
-
-              <h3>
-
-                <span class="icon">💻</span>
-
-                Conexión al conocimiento
-
-              </h3>
-
-              <p>
-
-                Acceso a herramientas tecnológicas e información que facilitan
-
-                la búsqueda, el aprendizaje y la investigación.
-
-              </p>
-
-              <div class="servicio-card-horario">
-                <i class="bi bi-clock" aria-hidden="true"></i>
-                <span>Lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 7:00 p.m.</span>
-              </div>
-
-              <button
-                type="button"
-                class="servicio-card-link"
-                aria-haspopup="dialog"
-                aria-controls="modalServicio"
-              >
-                Conoce más
-                <i class="bi bi-arrow-right" aria-hidden="true"></i>
-              </button>
-            </div>
-
-          </article>
-
-          <article
-
-            class="servicio-card"
-
-            data-titulo="Cine con historia"
-
-            data-descripcion="Proyecciones que invitan a reflexionar, conectando el cine con la memoria, la cultura y el contexto."
-
-            data-detalle="Este servicio promueve espacios de encuentro alrededor del cine como herramienta pedagógica, cultural y de reflexión colectiva."
-            data-horario="De acuerdo con la programación establecida por la biblioteca."
-
-          >
-
-            <img
-
-              src="assets/img/services/service4.JPG"
-
-              alt="Cine con historia"
-
-              loading="lazy"
-
-            >
-
-            <div class="servicio-card-body">
-
-              <h3>
-
-                <span class="icon">🎬</span>
-
-                Cine con historia
-
-              </h3>
-
-              <p>
-
-                Proyecciones que invitan a reflexionar, conectando el cine
-
-                con la memoria, la cultura y el contexto.
-
-              </p>
-
-              <div class="servicio-card-horario">
-                <i class="bi bi-clock" aria-hidden="true"></i>
-                <span>De acuerdo con la programación establecida por la biblioteca.</span>
-              </div>
-
-              <button
-                type="button"
-                class="servicio-card-link"
-                aria-haspopup="dialog"
-                aria-controls="modalServicio"
-              >
-                Conoce más
-                <i class="bi bi-arrow-right" aria-hidden="true"></i>
-              </button>
-            </div>
-
-          </article>
-
-          <article
-
-            class="servicio-card"
-
-            data-titulo="Biblioayuda"
-
-            data-descripcion="Acompañamiento directo para resolver inquietudes y facilitar el uso de los servicios bibliotecarios."
-
-            data-detalle="Brinda orientación a usuarios que necesitan apoyo para acceder a materiales, comprender procesos o hacer uso adecuado de los servicios disponibles."
-            data-horario="Lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 7:00 p.m."
-
-          >
-
-            <img
-
-              src="assets/img/services/service5.JPG"
-
-              alt="Biblioayuda"
-
-              loading="lazy"
-
-            >
-
-            <div class="servicio-card-body">
-
-              <h3>
-
-                <span class="icon">❓</span>
-
-                Biblioayuda
-
-              </h3>
-
-              <p>
-
-                Acompañamiento directo para resolver inquietudes y facilitar
-
-                el uso de los servicios bibliotecarios.
-
-              </p>
-
-              <div class="servicio-card-horario">
-                <i class="bi bi-clock" aria-hidden="true"></i>
-                <span>Lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 7:00 p.m.</span>
-              </div>
-
-              <button
-                type="button"
-                class="servicio-card-link"
-                aria-haspopup="dialog"
-                aria-controls="modalServicio"
-              >
-                Conoce más
-                <i class="bi bi-arrow-right" aria-hidden="true"></i>
-              </button>
-            </div>
-
-          </article>
-
-          <article
-
-            class="servicio-card"
-
-            data-titulo="Biblioguía"
-
-            data-descripcion="Orientación personalizada para encontrar lecturas, recursos y rutas de búsqueda dentro de la biblioteca."
-
-            data-detalle="A través de este servicio se acompaña a los usuarios en la búsqueda de materiales, recomendaciones y recorridos de consulta según sus necesidades e intereses."
-            data-horario="Lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 7:00 p.m."
-
-          >
-
-            <img
-
-              src="assets/img/services/service6.jpeg"
-
-              alt="Biblioguía"
-
-              loading="lazy"
-
-            >
-
-            <div class="servicio-card-body">
-
-              <h3>
-
-                <span class="icon">🧭</span>
-
-                Biblioguía
-
-              </h3>
-
-              <p>
-
-                Orientación personalizada para encontrar lecturas, recursos
-
-                y rutas de búsqueda dentro de la biblioteca.
-
-              </p>
-
-              <div class="servicio-card-horario">
-                <i class="bi bi-clock" aria-hidden="true"></i>
-                <span>Lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 7:00 p.m.</span>
-              </div>
-
-              <button
-                type="button"
-                class="servicio-card-link"
-                aria-haspopup="dialog"
-                aria-controls="modalServicio"
-              >
-                Conoce más
-                <i class="bi bi-arrow-right" aria-hidden="true"></i>
-              </button>
-            </div>
-
-          </article>
-
-          <article
-
-            class="servicio-card"
-
-            data-titulo="Aventura literaria con Tigrillo"
-
-            data-descripcion="Un primer acercamiento a la lectura desde el juego, la imaginación y la exploración para niños y niñas."
-
-            data-detalle="Pensado para la primera infancia, este servicio promueve experiencias de lectura mediadas por el juego, la creatividad y el descubrimiento. Cada sábado encontrarás una actividad diferente para explorar historias, compartir en familia y crear a partir de la lectura, despertando la imaginación y el gusto por los libros."
-            data-horario="Sábados de 10:00 a.m. a 11:00 a.m."
-
-          >
-
-            <img
-
-              src="assets/img/services/service7.jpg"
-
-              alt="Aventura literaria con Tigrillo"
-
-              loading="lazy"
-
-            >
-
-            <div class="servicio-card-body">
-
-              <h3>
-
-                <span class="icon">🐯</span>
-
-                Aventuras del Tigrillo Lector
-
-              </h3>
-
-              <p>
-
-                Un primer acercamiento a la lectura desde el juego,
-
-                la imaginación y la exploración para niños y niñas.
-
-              </p>
-
-              <div class="servicio-card-horario">
-                <i class="bi bi-clock" aria-hidden="true"></i>
-                <span>Sábados de 10:00 a.m. a 11:00 a.m.</span>
-              </div>
-
-              <button
-                type="button"
-                class="servicio-card-link"
-                aria-haspopup="dialog"
-                aria-controls="modalServicio"
-              >
-                Conoce más
-                <i class="bi bi-arrow-right" aria-hidden="true"></i>
-              </button>
-            </div>
-
-          </article>
-
-          <article
-
-            class="servicio-card"
-
-            data-titulo="Biblioteca en movimiento"
-
-            data-descripcion="La biblioteca sale al encuentro de la comunidad, llevando la lectura y la cultura a distintos espacios del municipio."
-
-            data-detalle="Biblioteca en movimiento acerca los servicios y actividades de la biblioteca a instituciones educativas, jardines infantiles y otros espacios comunitarios del municipio, promoviendo la lectura en diversos territorios."
-            data-horario="Lunes a viernes de 8:00 a.m. a 12:00 m."
-
-          >
-
-            <img
-
-              src="assets/img/services/service8.png"
-
-              alt="Biblioteca en movimiento"
-
-              loading="lazy"
-
-            >
-
-            <div class="servicio-card-body">
-
-              <h3>
-
-                <span class="icon">🚐</span>
-
-                Biblioteca en movimiento
-
-              </h3>
-
-              <p>
-
-                La biblioteca que se desplaza y se adapta, llegando a distintos
-
-                espacios del municipio para ampliar su alcance.
-
-              </p>
-
-              <div class="servicio-card-horario">
-                <i class="bi bi-clock" aria-hidden="true"></i>
-                <span>Lunes a viernes de 8:00 a.m. a 12:00 m.</span>
-              </div>
-
-              <button
-                type="button"
-                class="servicio-card-link"
-                aria-haspopup="dialog"
-                aria-controls="modalServicio"
-              >
-                Conoce más
-                <i class="bi bi-arrow-right" aria-hidden="true"></i>
-              </button>
-            </div>
-
-          </article>
-
-          <article
-
-            class="servicio-card"
-
-            data-titulo="Camino al conocimiento"
-
-            data-descripcion="Apoyo a procesos de aprendizaje mediante herramientas, lecturas y acompañamiento continuo."
-
-            data-detalle="Este servicio fortalece procesos educativos y de formación mediante recursos de apoyo, consulta orientada y acompañamiento permanente."
-            data-horario="Martes de 8:30 a.m. a 10:30 a.m."
-
-          >
-
-            <img
-
-              src="assets/img/services/service9.JPG"
-
-              alt="Camino al conocimiento"
-
-              loading="lazy"
-
-            >
-
-            <div class="servicio-card-body">
-
-              <h3>
-
-                <span class="icon">🛤️</span>
-
-                Camino al conocimiento
-
-              </h3>
-
-              <p>
-
-                Apoyo a procesos de aprendizaje mediante herramientas,
-
-                lecturas y acompañamiento continuo.
-
-              </p>
-
-              <div class="servicio-card-horario">
-                <i class="bi bi-clock" aria-hidden="true"></i>
-                <span>Martes de 8:30 a.m. a 10:30 a.m.</span>
-              </div>
-
-              <button
-                type="button"
-                class="servicio-card-link"
-                aria-haspopup="dialog"
-                aria-controls="modalServicio"
-              >
-                Conoce más
-                <i class="bi bi-arrow-right" aria-hidden="true"></i>
-              </button>
-            </div>
-
-          </article>
-
-        </div>
-
-        <div class="servicios-cta-final">
-
-          <p>
-
-            <strong>
-
-              ¡Visítanos y aprovecha todo lo que nuestra biblioteca tiene para ti!
-
-            </strong>
-
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-  <!-- =====================================================
-
-       MODAL DE DETALLE
-
-       Presenta información ampliada del servicio seleccionado.
-
-       ===================================================== -->
+<section class="hero">
 
   <div
 
-    class="modal-servicio"
+    id="heroCarousel"
 
-    id="modalServicio"
+    class="carousel slide carousel-fade"
 
-    aria-hidden="true"
+    data-bs-interval="6000"
 
   >
 
     <div
 
-      class="modal-servicio-overlay"
+      class="carousel-inner"
 
-      id="modalServicioOverlay"
+      id="heroCarouselInner"
+
+      aria-live="polite"
 
     ></div>
 
-    <div
+  </div>
 
-      class="modal-servicio-dialog"
+</section>
 
-      role="dialog"
 
-      aria-modal="true"
 
-      aria-labelledby="modalServicioTitulo"
+<!-- Accesos directos a recursos y servicios prioritarios -->
+
+<section class="features" aria-label="Accesos principales">
+
+  <div class="container">
+
+    <div class="row g-4">
+
+
+
+      <div class="col-md-4">
+
+    <a
+
+        href="https://tenjo.bibliotecasidecut.com/"
+
+        class="feature-link"
+
+        aria-label="Ir a Koha"
 
     >
 
-      <button
+        <div class="card-feature card-feature-koha">
 
-        class="modal-servicio-close"
 
-        id="modalServicioClose"
 
-        aria-label="Cerrar modal"
+            <div class="icon-feature icon-koha">
 
-      >
+                <img src="assets/img/icons/koha.png" alt="Koha">
 
-        ×
+            </div>
 
-      </button>
 
-      <div class="modal-servicio-content">
 
-        <span class="modal-servicio-kicker">
+            <div class="feature-copy">
 
-          Servicio de la biblioteca
+                <h5>Koha</h5>
 
-        </span>
+                <p>Busca libros y recursos en el catálogo bibliográfico.</p>
 
-        <h3 id="modalServicioTitulo">Título</h3>
+            </div>
 
-        <p id="modalServicioResumen"></p>
 
-        <div class="modal-servicio-divider"></div>
 
-        <p id="modalServicioDetalle"></p>
+        </div>
 
-        <div class="modal-servicio-horario">
-          <span class="modal-servicio-horario-icon" aria-hidden="true">
-            <i class="bi bi-clock-fill"></i>
-          </span>
+    </a>
 
-          <div>
-            <strong>Horario de atención</strong>
-            <p id="modalServicioHorario"></p>
+</div>
+
+
+
+      <div class="col-md-4">
+
+        <a
+
+          href="material-digital.html"
+
+          class="feature-link"
+
+          aria-label="Ir a Material Digital"
+
+        >
+
+          <div class="card-feature card-feature-digital">
+
+            <div class="icon-feature icon-llave">
+
+              <img src="assets/img/icons/digital.png" alt="Material digital">
+
+            </div>
+
+
+
+            <div class="feature-copy">
+
+              <h5>Material digital</h5>
+
+              <p>Consulta libros, audiolibros y recursos digitales.</p>
+
+            </div>
+
           </div>
+
+        </a>
+
+      </div>
+
+
+
+      <div class="col-md-4">
+
+        <a
+
+          href="servicios.html"
+
+          class="feature-link"
+
+          aria-label="Conocer los servicios de la biblioteca"
+
+        >
+
+          <div class="card-feature card-feature-services">
+
+            <div class="icon-feature icon-services">
+
+              <img src="assets/img/icons/services.png" alt="Servicios">
+
+            </div>
+
+
+
+            <div class="feature-copy">
+
+              <h5>Servicios</h5>
+
+              <p>Conoce la oferta disponible para la comunidad.</p>
+
+            </div>
+
+          </div>
+
+        </a>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- Presentación institucional de la biblioteca y su relación con la comunidad -->
+
+<section class="home-info home-info-primary">
+
+  <div class="container">
+
+    <div class="info-split">
+
+      <div class="info-media">
+
+        <img src="assets/img/home/home1.JPG" alt="Espacio de lectura y formación en la biblioteca">
+
+      </div>
+
+
+
+      <div class="info-content">
+
+        <span class="section-kicker">Biblioteca y comunidad</span>
+
+        <h2>Un espacio para descubrir, aprender y compartir</h2>
+
+        <p>
+
+          La Biblioteca Pública Municipal Isabel Murillo de Luque ha crecido al ritmo del municipio,
+
+          acompañando sus transformaciones y sosteniendo, en medio de todo, un lugar para la palabra.
+
+          Lo que empezó como un espacio de consulta se ha convertido en un punto de encuentro donde
+
+          la lectura dialoga con la memoria, la educación y la vida cotidiana.
+
+        </p>
+
+        <p>
+
+          Hoy, la biblioteca no se limita a sus paredes: se extiende hacia veredas, parques e instituciones,
+
+          llevando libros, conversaciones y experiencias a donde hacen falta. Más que un edificio,
+
+          es una red viva que conecta personas, historias y formas de aprender.
+
+        </p>
+
+
+
+        <div class="info-highlights">
+
+          <span>Lectura</span>
+
+          <span>Aprendizaje</span>
+
+          <span>Participación</span>
+
         </div>
 
       </div>
@@ -1008,183 +414,185 @@
 
   </div>
 
-  <!-- =====================================================
+</section>
 
-       INFORMACIÓN INSTITUCIONAL
 
-       Horarios de atención y canales de contacto compartidos.
 
-       ===================================================== -->
+<!-- Recursos literarios externos seleccionados para consulta -->
 
-  <section class="footer-recursos footer-recursos-interno">
+<section class="container novedades">
 
-    <div class="container">
 
-      <div class="footer-wrapper footer-wrapper-simple">
 
-        <div class="footer-col-block footer-brand-block">
+  <div class="novedades-header">
 
-          <img
+    <h4>Recomendaciones literarias</h4>
 
-            src="assets/img/logobiblio.png"
+    <a href="https://openlibrary.org/" target="_blank" rel="noopener noreferrer" class="ver-mas">Ver más →</a>
 
-            alt="Biblioteca"
+  </div>
 
-            class="footer-biblio-logo"
 
-          >
 
-        </div>
+  <div class="books">
 
-        <div class="footer-col-block footer-info-block">
 
-          <h4>Horario de atención</h4>
 
-          <div class="footer-info-list">
+    <a href="https://www.pictocuentos.com/caperucita-roja" target="_blank" rel="noopener noreferrer" class="book-card" aria-label="Consultar Caperucita Roja">
 
-            <div class="footer-info-item">
+      <img src="assets/img/recomendaciones/caperucita_roja.jpeg" alt="Portada de Caperucita Roja" loading="lazy">
 
-              <span
+    </a>
 
-                class="footer-info-icon"
 
-                aria-hidden="true"
 
-              >
+    <a href="https://www.ellibrototal.com/ltotal/?t=1&d=5240_5193_1" target="_blank" rel="noopener noreferrer" class="book-card" aria-label="Consultar Los Viajes de Gulliver">
 
-                <i class="bi bi-calendar3"></i>
+      <img src="assets/img/recomendaciones/los-viajes-de-gulliver.jpg" alt="Portada de Los Viajes de Gulliver" loading="lazy">
 
-              </span>
+    </a>
 
-              <div class="footer-info-content">
 
-                <strong>Lunes a viernes</strong>
 
-                <p>8:00 am a 1:00 pm</p>
+    <a href="https://planetalibro.net/app/read/cervantes-y-saavedra-miguel-de-el-ingenioso-hidalgo-don-quijote-de-la-mancha" target="_blank" rel="noopener noreferrer" class="book-card" aria-label="Consultar El Ingenioso Hidalgo Don Quijote de la Mancha">
 
-                <p>2:00 pm a 7:00 pm</p>
+      <img src="assets/img/recomendaciones/Do_quijote.jpeg" alt="Portada del Ingenioso Hidalgo Don Quijote de la Mancha" loading="lazy">
 
-              </div>
+    </a>
 
-            </div>
 
-            <div class="footer-info-item">
 
-              <span
+    <a href="https://www.pictocuentos.com/hansel-y-gretel/?selidioma=1" target="_blank" rel="noopener noreferrer" class="book-card" aria-label="Consultar Hansel y Gretel">
 
-                class="footer-info-icon"
+      <img src="assets/img/recomendaciones/hansel_gretel.jpeg" alt="Portada de Hansel y Gretel" loading="lazy">
 
-                aria-hidden="true"
+    </a>
 
-              >
 
-                <i class="bi bi-calendar3"></i>
 
-              </span>
+    <a href="https://planetalibro.net/app/listen/camus-albert-la-peste" target="_blank" rel="noopener noreferrer" class="book-card" aria-label="Consultar La Peste">
 
-              <div class="footer-info-content">
+      <img src="assets/img/recomendaciones/la_peste.jpeg" alt="Portada de La Peste" loading="lazy">
 
-                <strong>Sábado</strong>
+    </a>
 
-                <p>8:00 am a 1:00 pm</p>
 
-              </div>
 
-            </div>
+    <a href="https://www.ellibrototal.com/ltotal/?t=1&d=8338_8931_1" target="_blank" rel="noopener noreferrer" class="book-card" aria-label="Consultar Frankestein">
+
+      <img src="assets/img/recomendaciones/frankestein.jpeg" alt="Portada de Frankestein" loading="lazy">
+
+    </a>
+
+
+
+  </div>
+
+
+
+</section>
+
+
+
+<!-- Próximos tres eventos activos; la agenda completa se consulta en eventos.html -->
+
+<section class="home-events" id="calendario-eventos">
+
+  <div class="container">
+
+
+
+    <div class="home-events-header">
+
+      <div class="home-events-heading">
+
+        <span class="section-kicker">Agenda cultural</span>
+
+        <h2>Próximos eventos y fechas destacadas</h2>
+
+        <p>
+
+          Descubre algunas de las actividades y fechas que hacen parte de
+
+          nuestra agenda cultural, educativa y bibliotecaria.
+
+        </p>
+
+      </div>
+
+
+
+      <a href="eventos.html" class="home-events-all">
+
+        Ver todos los eventos
+
+        <i class="bi bi-arrow-right" aria-hidden="true"></i>
+
+      </a>
+
+    </div>
+
+
+
+    <div class="home-events-grid" id="homeEventsGrid" aria-live="polite"></div>
+
+
+
+  </div>
+
+</section>
+
+
+
+<!-- Síntesis de programas y líneas de participación comunitaria -->
+
+<section class="home-info home-info-secondary">
+
+  <div class="container">
+
+    <div class="info-split reverse">
+
+      <div class="info-content">
+
+        <span class="section-kicker">Programación y servicios</span>
+
+        <h2>Programas y actividades para la comunidad</h2>
+
+        <p>
+
+          Nuestra biblioteca desarrolla programas y actividades que promueven la lectura, la escritura,
+
+          la oralidad y el aprendizaje. Cada propuesta busca generar experiencias significativas para
+
+          públicos de todas las edades y fortalecer el encuentro entre la comunidad y la biblioteca.
+
+        </p>
+
+
+
+        <div class="info-points">
+
+          <div class="info-point">
+
+            <strong>Fomento de lectura</strong>
+
+            <span>Experiencias que acercan a la comunidad al libro, la lectura y la palabra.</span>
 
           </div>
 
-        </div>
+          <div class="info-point">
 
-        <div class="footer-col-block footer-info-block">
+            <strong>Formación y aprendizaje</strong>
 
-          <h4>Contáctanos</h4>
+            <span>Espacios para aprender, compartir saberes y descubrir nuevas formas de conocimiento.</span>
 
-          <div class="footer-info-list">
+          </div>
 
-            <div class="footer-info-item">
+          <div class="info-point">
 
-              <span
+            <strong>Participación comunitaria</strong>
 
-                class="footer-info-icon"
-
-                aria-hidden="true"
-
-              >
-
-                <i class="bi bi-geo-alt-fill"></i>
-
-              </span>
-
-              <div class="footer-info-content">
-
-                <strong>Dirección</strong>
-
-                <p>
-
-                  Centro Cultural Nhora Matallana Forero Km 1 vía Tenjo - La Punta,
-
-                  vereda Chitasuga
-
-                </p>
-
-              </div>
-
-            </div>
-
-            <div class="footer-info-item">
-
-              <span
-
-                class="footer-info-icon"
-
-                aria-hidden="true"
-
-              >
-
-                <i class="bi bi-telephone-fill"></i>
-
-              </span>
-
-              <div class="footer-info-content">
-
-                <strong>Teléfono</strong>
-
-                <a href="tel:+573007274898">
-
-                  +57 300 727 48 98
-
-                </a>
-
-              </div>
-
-            </div>
-
-            <div class="footer-info-item">
-
-              <span
-
-                class="footer-info-icon"
-
-                aria-hidden="true"
-
-              >
-
-                <i class="bi bi-envelope-fill"></i>
-
-              </span>
-
-              <div class="footer-info-content">
-
-                <strong>Correo electrónico</strong>
-
-                <p>institutodeculturayturismo@tenjo-cundinamarca.gov.co</p>
-
-                <p>biblioteca@tenjoculturayturismo.gov.co</p>
-
-              </div>
-
-            </div>
+            <span>Procesos que fortalecen el vínculo entre biblioteca, comunidad y territorio.</span>
 
           </div>
 
@@ -1192,83 +600,595 @@
 
       </div>
 
+
+
+      <div class="info-media info-media-tall">
+
+        <img src="assets/img/home/home2.jpeg" alt="Actividades y programas de la biblioteca">
+
+      </div>
+
     </div>
 
-  </section>
+  </div>
 
-  <!-- =====================================================
+</section>
 
-       PIE INSTITUCIONAL
 
-       Identidad gráfica y accesos legales del sitio.
 
-       ===================================================== -->
+<!-- Resumen territorial de sedes y acceso a la vista detallada -->
 
-  <footer class="footer-bottom footer-servicios">
+<section class="home-invite">
 
-    <div class="footer-band">
+  <div class="container">
 
-      <div class="container footer-bottom-content">
 
-        <div class="footer-left">
 
-          <img
+    <div class="sedes-home-section">
 
-            src="assets/img/logotenjo.png"
 
-            alt="Escudo institucional"
 
-            class="footer-shield"
+      <div class="sedes-home-header">
 
-          >
+        <div class="sedes-home-title">
+
+          <span class="section-kicker">Biblioteca en el territorio</span>
+
+          <h2>Nuestras sedes</h2>
+
+        </div>
+
+
+
+        <p>
+
+          Una red de espacios que acerca la lectura, la cultura y el
+
+          conocimiento a distintos sectores de Tenjo, desde el centro del
+
+          municipio hasta sus comunidades rurales.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="sedes-home-grid">
+
+
+
+        <article class="sede-home-card sede-home-principal">
+
+          <div class="sede-home-top">
+
+            <span class="sede-home-icon" aria-hidden="true">
+
+              <i class="bi bi-building"></i>
+
+            </span>
+
+
+
+            <span class="sede-home-type">Sede principal</span>
+
+          </div>
+
+
+
+          <h3>Biblioteca Pública Municipal Isabel Murillo de Luque</h3>
+
+
+
+          <h4>
+
+            <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+
+            Centro Cultural Nhora Matallana Forero
+
+          </h4>
+
+
 
           <p>
 
-            <a href="#">Aviso Legal</a>
+            Un espacio para leer, investigar, encontrarse y participar en la
 
-            <span>|</span>
+            vida cultural del municipio.
 
-            <a href="#">Política de Privacidad</a>
+          </p>
+
+        </article>
+
+
+
+        <article class="sede-home-card sede-home-rural">
+
+          <div class="sede-home-top">
+
+            <span class="sede-home-icon" aria-hidden="true">
+
+              <i class="bi bi-signpost-split-fill"></i>
+
+            </span>
+
+
+
+            <span class="sede-home-type">Sede rural itinerante</span>
+
+          </div>
+
+
+
+          <h3>Biblioteca Rural Itinerante de La Punta</h3>
+
+
+
+          <h4>
+
+            <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+
+            Vive Digital, estación de policía de La Punta
+
+          </h4>
+
+
+
+          <p>
+
+            Acerca los servicios bibliotecarios a la comunidad y facilita el
+
+            acceso al conocimiento en el territorio.
+
+          </p>
+
+        </article>
+
+
+
+        <article class="sede-home-card sede-home-rural">
+
+          <div class="sede-home-top">
+
+            <span class="sede-home-icon" aria-hidden="true">
+
+              <i class="bi bi-tree-fill"></i>
+
+            </span>
+
+
+
+            <span class="sede-home-type">Sede rural</span>
+
+          </div>
+
+
+
+          <h3>Biblioteca Rural Itinerante de Churuguaco Alto</h3>
+
+
+
+          <h4>
+
+            <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+
+            Escuela de Churuguaco Alto
+
+          </h4>
+
+
+
+          <p>
+
+            Articula la lectura con la vida rural y fortalece procesos
+
+            educativos y comunitarios desde la escuela.
+
+          </p>
+
+        </article>
+
+
+
+        <article class="sede-home-card sede-home-alterna">
+
+          <div class="sede-home-top">
+
+            <span class="sede-home-icon" aria-hidden="true">
+
+              <i class="bi bi-house-door-fill"></i>
+
+            </span>
+
+
+
+            <span class="sede-home-type">Sede alterna</span>
+
+          </div>
+
+
+
+          <h3>Biblioteca Pública Municipal – Casa 13</h3>
+
+
+
+          <h4>
+
+            <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+
+            Espacio complementario
+
+          </h4>
+
+
+
+          <p>
+
+            Amplía las posibilidades de encuentro, creación y circulación de
+
+            saberes para la comunidad.
+
+          </p>
+
+        </article>
+
+
+
+      </div>
+
+
+
+      <div class="sedes-home-footer">
+
+        <div class="sedes-home-message">
+
+          <i class="bi bi-map-fill" aria-hidden="true"></i>
+
+
+
+          <span>
+
+            Cuatro espacios conectados por una misma misión:
+
+            acercar la biblioteca a las personas.
+
+          </span>
+
+        </div>
+
+
+
+        <a href="sedes.html" class="btn btn-main">
+
+          Conocer todas las sedes
+
+        </a>
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+
+</section>
+
+
+
+<!-- Información institucional de atención y canales de contacto -->
+
+<section class="footer-recursos footer-contact-home">
+
+  <div class="container">
+
+
+
+    <div class="contact-home-layout">
+
+
+
+      <div class="contact-home-mascot">
+
+        <img
+
+          src="assets/img/tigrillo.png"
+
+          alt="Tigrillo, mascota de la Biblioteca Pública Municipal"
+
+        >
+
+      </div>
+
+
+
+      <div class="contact-home-card">
+
+
+
+        <div class="contact-home-header">
+
+          <div>
+
+            <span class="section-kicker">Información institucional</span>
+
+            <h2>Horario y contacto</h2>
+
+          </div>
+
+
+
+          <p>
+
+            Consulta nuestros horarios de atención y comunícate con la
+
+            biblioteca mediante los canales institucionales.
 
           </p>
 
         </div>
 
-        <div class="footer-right">
 
-          <img
 
-            src="assets/img/co.png"
+        <div class="contact-home-grid">
 
-            alt="Marca Colombia"
 
-            class="footer-logos"
 
-          >
+          <div class="contact-home-column">
 
-          <img
+            <div class="contact-column-heading">
 
-            src="assets/img/culturablanco.png"
+              <span class="contact-column-icon"><i class="bi bi-clock-fill" aria-hidden="true"></i></span>
 
-            alt="Logos institucionales"
 
-            class="footer-logos"
 
-          >
+              <div>
+
+                <small>Atención al público</small>
+
+                <h3>Horarios de la biblioteca</h3>
+
+              </div>
+
+            </div>
+
+
+
+            <div class="contact-compact-list">
+
+
+
+              <div class="contact-compact-item">
+
+                <span class="contact-item-icon"><i class="bi bi-calendar3" aria-hidden="true"></i></span>
+
+
+
+                <div>
+
+                  <strong>Lunes a viernes</strong>
+
+                  <p>8:00 a. m. a 1:00 p. m.</p>
+
+                  <p>2:00 p. m. a 7:00 p. m.</p>
+
+                </div>
+
+              </div>
+
+
+
+              <div class="contact-compact-item">
+
+                <span class="contact-item-icon"><i class="bi bi-calendar3" aria-hidden="true"></i></span>
+
+
+
+                <div>
+
+                  <strong>Sábados</strong>
+
+                  <p>8:00 a. m. a 1:00 p. m.</p>
+
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+
+
+          <div class="contact-home-column contact-home-column-details">
+
+            <div class="contact-column-heading">
+
+              <span class="contact-column-icon"><i class="bi bi-chat-dots-fill" aria-hidden="true"></i></span>
+
+
+
+              <div>
+
+                <small>Canales institucionales</small>
+
+                <h3>Información de contacto</h3>
+
+              </div>
+
+            </div>
+
+
+
+            <div class="contact-compact-list">
+
+
+
+              <div class="contact-compact-item">
+
+                <span class="contact-item-icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i></span>
+
+
+
+                <div>
+
+                  <strong>Dirección</strong>
+
+                  <p>
+
+                    Centro Cultural Nhora Matallana Forero, km 1 vía Tenjo–La Punta,
+
+                    vereda Chitasugá.
+
+                  </p>
+
+                </div>
+
+              </div>
+
+
+
+              <div class="contact-compact-item">
+
+                <span class="contact-item-icon"><i class="bi bi-telephone-fill" aria-hidden="true"></i></span>
+
+
+
+                <div>
+
+                  <strong>Teléfono</strong>
+
+                  <a href="tel:+573007274898">300 727 4898</a>
+
+                </div>
+
+              </div>
+
+
+
+              <div class="contact-compact-item contact-email-item">
+
+                <span class="contact-item-icon"><i class="bi bi-envelope-fill" aria-hidden="true"></i></span>
+
+
+
+                <div>
+
+                  <strong>Correos electrónicos</strong>
+
+
+
+                  <a
+
+                    href="mailto:institutodeculturayturismo@tenjo-cundinamarca.gov.co"
+
+                    class="contact-email"
+
+                  >
+
+                    institutodeculturayturismo@tenjo-cundinamarca.gov.co
+
+                  </a>
+
+
+
+                  <a
+
+                    href="mailto:biblioteca@tenjoculturayturismo.gov.co"
+
+                    class="contact-email"
+
+                  >
+
+                    biblioteca@tenjoculturayturismo.gov.co
+
+                  </a>
+
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+
 
         </div>
 
+
+
       </div>
+
+
 
     </div>
 
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script src="assets/js/script.js?v=20260930-2"></script>
+  </div>
 
-  <script src="assets/js/servicios.js?v=20260930-2"></script>
+</section>
+
+
+
+<footer class="footer-bottom home-footer-bottom">
+
+  <div class="footer-band">
+
+    <div class="container footer-bottom-content">
+
+
+
+      <div class="footer-left">
+
+        <img src="assets/img/culturablanco.png" alt="Instituto Municipal de Cultura y Turismo de Tenjo" class="footer-institute-logo">
+
+        <p>
+
+          <a href="#">Aviso Legal</a>
+
+          <span>|</span>
+
+          <a href="#">Política de Privacidad</a>
+
+        </p>
+
+      </div>
+
+
+
+      <div class="footer-right">
+
+        <img src="assets/img/co.png" alt="Marca Colombia" class="footer-logos">
+
+        <img src="assets/img/logotenjo.png" alt="Alcaldía de Tenjo" class="footer-city-logo">
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/script.js?v=20260929-1"></script>
+
+<script src="assets/js/popup-home.js?v=20260929-1"></script>
+
+
 
 </body>
 
